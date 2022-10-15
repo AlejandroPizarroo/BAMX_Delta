@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2171DB328FB655A002ADAB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2171DB228FB655A002ADAB7 /* LoginViewController.swift */; };
+		F2171DBC28FB6E15002ADAB7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */; };
 		F266665128F76A74005C192C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266665028F76A74005C192C /* AppDelegate.swift */; };
 		F266665328F76A74005C192C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266665228F76A74005C192C /* SceneDelegate.swift */; };
 		F266665528F76A74005C192C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266665428F76A74005C192C /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2171DB228FB655A002ADAB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F266664D28F76A74005C192C /* BAMX_Delta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAMX_Delta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F266665028F76A74005C192C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F266665228F76A74005C192C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				F266665028F76A74005C192C /* AppDelegate.swift */,
 				F266665228F76A74005C192C /* SceneDelegate.swift */,
 				F266665428F76A74005C192C /* ViewController.swift */,
+				F2171DB228FB655A002ADAB7 /* LoginViewController.swift */,
+				F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */,
 				F266665628F76A74005C192C /* Main.storyboard */,
 				F266665928F76A78005C192C /* Assets.xcassets */,
 				F266665B28F76A78005C192C /* LaunchScreen.storyboard */,
@@ -258,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2171DB328FB655A002ADAB7 /* LoginViewController.swift in Sources */,
+				F2171DBC28FB6E15002ADAB7 /* RegisterViewController.swift in Sources */,
 				F266665528F76A74005C192C /* ViewController.swift in Sources */,
 				F266665128F76A74005C192C /* AppDelegate.swift in Sources */,
 				F266665328F76A74005C192C /* SceneDelegate.swift in Sources */,
