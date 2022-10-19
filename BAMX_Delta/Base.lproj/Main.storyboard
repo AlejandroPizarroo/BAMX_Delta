@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qo6-ai-ICh">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -8,27 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BAMX_Delta" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo_monocromatic" translatesAutoresizingMaskIntoConstraints="NO" id="pBX-VU-7dY">
-                                <rect key="frame" x="53" y="326" width="284" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.80767804379999997" green="0.1969078481" blue="0.30422651769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="90.769230769230759" y="-28.436018957345969"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="KIC-B8-bRP">
             <objects>
@@ -37,68 +16,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Iox-HC-YQL">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Iox-HC-YQL">
                                 <rect key="frame" x="99" y="78" width="193" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Inicia Sesión"/>
                                     <segment title="Regístrate"/>
                                 </segments>
+                                <connections>
+                                    <segue destination="WBi-j0-9Fw" kind="presentation" modalPresentationStyle="fullScreen" id="4Jx-VK-562"/>
+                                </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¡HOLA DE NUEVO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-eO-11L">
-                                <rect key="frame" x="114" y="142" width="163" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¡HOLA DE NUEVO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-eO-11L">
+                                <rect key="frame" x="114" y="142" width="163" height="15.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="13"/>
                                 <color key="textColor" systemColor="placeholderTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Iniciar sesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNL-oM-q7y">
-                                <rect key="frame" x="84" y="170" width="222" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iniciar sesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNL-oM-q7y">
+                                <rect key="frame" x="84" y="170" width="222" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="34"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inicia sesión para entrar en tu cuenta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OB2-fL-Q6L">
-                                <rect key="frame" x="55" y="215" width="281" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Inicia sesión para entrar en tu cuenta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OB2-fL-Q6L">
+                                <rect key="frame" x="55" y="215" width="281" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMA-fF-bRs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMA-fF-bRs">
                                 <rect key="frame" x="25" y="300" width="41" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nTv-3R-50d"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCD-hg-A2I">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCD-hg-A2I">
                                 <rect key="frame" x="25" y="340" width="67" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wu5-Ef-2JA">
-                                <rect key="frame" x="127" y="293" width="145" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wu5-Ef-2JA">
+                                <rect key="frame" x="127" y="299" width="116.33333333333331" height="22"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOl-dZ-9LJ">
-                                <rect key="frame" x="127" y="333" width="165" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWh-at-Cb6">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWh-at-Cb6">
                                 <rect key="frame" x="91" y="394" width="209" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="¿Olvidaste la contraseña?">
                                     <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 </buttonConfiguration>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOl-dZ-9LJ">
+                                <rect key="frame" x="127" y="339" width="155" height="22"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3qG-yC-y9w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GMA-fF-bRs" firstAttribute="centerY" secondItem="wu5-Ef-2JA" secondAttribute="centerY" id="04e-dd-TUw"/>
+                            <constraint firstItem="Iox-HC-YQL" firstAttribute="leading" secondItem="3qG-yC-y9w" secondAttribute="leading" constant="99" id="4da-0u-kDy"/>
+                            <constraint firstItem="Iox-HC-YQL" firstAttribute="centerX" secondItem="bC9-yL-FQE" secondAttribute="centerX" id="5nu-X5-0Dr"/>
+                            <constraint firstItem="dWh-at-Cb6" firstAttribute="leading" secondItem="3qG-yC-y9w" secondAttribute="leading" constant="91" id="6xO-3W-KGs"/>
+                            <constraint firstItem="GMA-fF-bRs" firstAttribute="leading" secondItem="WCD-hg-A2I" secondAttribute="leading" id="72A-6Z-xtS"/>
+                            <constraint firstItem="WCD-hg-A2I" firstAttribute="centerY" secondItem="kOl-dZ-9LJ" secondAttribute="centerY" id="9MK-Az-tge"/>
+                            <constraint firstItem="lNL-oM-q7y" firstAttribute="leading" secondItem="3qG-yC-y9w" secondAttribute="leading" constant="84" id="CvN-d9-4l7"/>
+                            <constraint firstItem="lNL-oM-q7y" firstAttribute="top" secondItem="vPT-eO-11L" secondAttribute="bottom" constant="12.333333333333343" id="DoD-7Y-B90"/>
+                            <constraint firstItem="lNL-oM-q7y" firstAttribute="centerX" secondItem="OB2-fL-Q6L" secondAttribute="centerX" id="EMf-If-Uvv"/>
+                            <constraint firstItem="vPT-eO-11L" firstAttribute="centerX" secondItem="lNL-oM-q7y" secondAttribute="centerX" id="Mq1-iS-NR9"/>
+                            <constraint firstItem="WCD-hg-A2I" firstAttribute="top" secondItem="GMA-fF-bRs" secondAttribute="bottom" constant="19" id="NtX-YV-tDJ"/>
+                            <constraint firstItem="OB2-fL-Q6L" firstAttribute="top" secondItem="lNL-oM-q7y" secondAttribute="bottom" constant="4.3333333333333428" id="PHh-n3-8jK"/>
+                            <constraint firstItem="wu5-Ef-2JA" firstAttribute="top" secondItem="OB2-fL-Q6L" secondAttribute="bottom" constant="63.666666666666657" id="XR2-j7-0Da"/>
+                            <constraint firstItem="wu5-Ef-2JA" firstAttribute="leading" secondItem="kOl-dZ-9LJ" secondAttribute="leading" id="aou-UB-Aux"/>
+                            <constraint firstItem="vPT-eO-11L" firstAttribute="leading" secondItem="3qG-yC-y9w" secondAttribute="leading" constant="114" id="bzR-1U-X7K"/>
+                            <constraint firstItem="dWh-at-Cb6" firstAttribute="top" secondItem="kOl-dZ-9LJ" secondAttribute="bottom" constant="33" id="cQC-TZ-qc2"/>
+                            <constraint firstItem="kOl-dZ-9LJ" firstAttribute="leading" secondItem="WCD-hg-A2I" secondAttribute="trailing" constant="35" id="eoL-Ra-wEZ"/>
+                            <constraint firstItem="OB2-fL-Q6L" firstAttribute="leading" secondItem="3qG-yC-y9w" secondAttribute="leading" constant="55" id="f07-hW-hbq"/>
+                            <constraint firstItem="WCD-hg-A2I" firstAttribute="bottom" secondItem="kOl-dZ-9LJ" secondAttribute="bottom" id="ge8-Ze-qOR"/>
+                            <constraint firstItem="Iox-HC-YQL" firstAttribute="centerX" secondItem="vPT-eO-11L" secondAttribute="centerX" id="jtO-dn-SMg"/>
+                            <constraint firstItem="vPT-eO-11L" firstAttribute="top" secondItem="Iox-HC-YQL" secondAttribute="bottom" constant="33" id="p8r-N6-UpR"/>
+                            <constraint firstItem="GMA-fF-bRs" firstAttribute="bottom" secondItem="wu5-Ef-2JA" secondAttribute="bottom" id="pQr-Jj-b17"/>
+                            <constraint firstItem="GMA-fF-bRs" firstAttribute="leading" secondItem="3qG-yC-y9w" secondAttribute="leading" constant="25" id="pyl-OH-sDn"/>
+                            <constraint firstItem="OB2-fL-Q6L" firstAttribute="centerX" secondItem="dWh-at-Cb6" secondAttribute="centerX" id="szl-iR-Zeq"/>
+                            <constraint firstItem="Iox-HC-YQL" firstAttribute="top" secondItem="3qG-yC-y9w" secondAttribute="top" constant="31" id="xwj-s1-2js"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqf-SU-TJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -106,126 +109,173 @@
             <point key="canvasLocation" x="869" y="-28"/>
         </scene>
         <!--Register View Controller-->
-        <scene sceneID="a5e-Bn-Pa6">
+        <scene sceneID="EQd-nr-uy1">
             <objects>
-                <viewController id="UNd-2C-nG4" customClass="RegisterViewController" customModule="BAMX_Delta" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0h6-Re-f9z">
+                <viewController id="WBi-j0-9Fw" customClass="RegisterViewController" customModule="BAMX_Delta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sky-eP-O9M">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="fU4-Fy-2fm">
-                                <rect key="frame" x="99" y="78" width="193" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Inicia Sesión"/>
-                                    <segment title="Regístrate"/>
-                                </segments>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3df-7x-svd">
-                                <rect key="frame" x="28" y="300" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apellido" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovF-YG-2XP">
-                                <rect key="frame" x="27" y="336" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu nombre aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hok-om-ZNz">
-                                <rect key="frame" x="127" y="293" width="181" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu apellido aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qUy-7T-yET">
-                                <rect key="frame" x="127" y="329" width="177" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPF-pH-QO9">
-                                <rect key="frame" x="27" y="372" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Example@mail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0K-5A-6Vf">
-                                <rect key="frame" x="127" y="365" width="165" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teléfono" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYR-Ii-K76">
-                                <rect key="frame" x="27" y="408" width="63" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu número aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uMs-PW-jQg">
-                                <rect key="frame" x="127" y="401" width="165" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSp-kt-cwR">
-                                <rect key="frame" x="127" y="437" width="165" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbF-J7-RcD">
-                                <rect key="frame" x="28" y="444" width="67" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kEP-lc-TTx">
-                                <rect key="frame" x="51" y="142" width="289" height="110"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tko-uX-8R7">
+                                <rect key="frame" x="53.333333333333343" y="78" width="283.33333333333326" height="157"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡BIENVENIDO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ruv-aA-aiX">
-                                        <rect key="frame" x="101" y="0.0" width="87" height="16"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="EL6-hf-HYI">
+                                        <rect key="frame" x="45.333333333333343" y="0.0" width="193" height="32"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="16" id="Zyz-aS-2Lk"/>
-                                            <constraint firstAttribute="width" constant="87" id="zcZ-mU-XM1"/>
+                                            <constraint firstAttribute="height" constant="31" id="odQ-40-a5P"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Inicia Sesión"/>
+                                            <segment title="Regístrate"/>
+                                        </segments>
+                                        <connections>
+                                            <segue destination="qo6-ai-ICh" kind="presentation" modalPresentationStyle="fullScreen" id="Lhx-S9-iqN"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡BIENVENIDO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7G-YI-3z5">
+                                        <rect key="frame" x="98.333333333333314" y="47" width="87" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="oqb-Ku-rnh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="13"/>
                                         <color key="textColor" systemColor="placeholderTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjB-wx-jAq">
-                                        <rect key="frame" x="33.666666666666657" y="24" width="222" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-zP-H9v">
+                                        <rect key="frame" x="43.333333333333329" y="79" width="196.66666666666669" height="41"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="41" id="Z5z-1t-gqV"/>
-                                            <constraint firstAttribute="width" constant="222" id="ZcN-v1-cr3"/>
+                                            <constraint firstAttribute="height" constant="41" id="2Hk-gY-lZs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="34"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regístrate para crear una nueva cuenta " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pv5-TB-hKR">
-                                        <rect key="frame" x="0.0" y="73" width="289" height="37"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regístrate para crear una nueva cuenta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCR-Jw-acs">
+                                        <rect key="frame" x="0.0" y="136" width="283.33333333333331" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="37" id="3y7-Nl-en3"/>
-                                            <constraint firstAttribute="width" constant="289" id="Uxy-z2-dLy"/>
+                                            <constraint firstAttribute="height" constant="21" id="hmg-za-orT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewk-ic-i6A">
+                                <rect key="frame" x="24.999999999999996" y="299" width="60.666666666666657" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qah-XN-avH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCn-D9-M3s">
+                                <rect key="frame" x="24.999999999999996" y="339" width="62.666666666666657" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu nombre aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfz-Vf-qdi">
+                                <rect key="frame" x="123" y="299" width="190" height="22"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu apellido aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZ0-sq-lgS">
+                                <rect key="frame" x="123" y="340" width="183" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="NrL-j9-7Cg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zom-BE-dce">
+                                <rect key="frame" x="24.999999999999996" y="380" width="40.666666666666657" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="XGY-Uv-60E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxZ-Gy-9Cz">
+                                <rect key="frame" x="24.999999999999996" y="421" width="62.666666666666657" height="22"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyA-4z-sN7">
+                                <rect key="frame" x="25" y="462" width="67" height="22"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-BJ-az5">
+                                <rect key="frame" x="122" y="462" width="170" height="22"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example@mail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grx-fk-O55">
+                                <rect key="frame" x="122" y="382" width="183" height="22"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu número aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2I-tP-CmP">
+                                <rect key="frame" x="122" y="421" width="183" height="22"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szi-7c-OmF">
+                                <rect key="frame" x="130" y="522" width="131" height="55"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crear cuenta">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="sR8-IR-bfJ"/>
+                        <viewLayoutGuide key="safeArea" id="sfU-CA-WR4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sfU-CA-WR4" firstAttribute="trailing" secondItem="bfz-Vf-qdi" secondAttribute="trailing" constant="77" id="4Dv-I7-h9c"/>
+                            <constraint firstItem="ewk-ic-i6A" firstAttribute="leading" secondItem="fCn-D9-M3s" secondAttribute="leading" id="4g3-2Q-IBY"/>
+                            <constraint firstItem="fCn-D9-M3s" firstAttribute="leading" secondItem="zom-BE-dce" secondAttribute="leading" id="6Wv-x5-Cgr"/>
+                            <constraint firstItem="Szi-7c-OmF" firstAttribute="top" secondItem="XOh-BJ-az5" secondAttribute="bottom" constant="39" id="6bi-Cf-JdR"/>
+                            <constraint firstItem="kyA-4z-sN7" firstAttribute="top" secondItem="XOh-BJ-az5" secondAttribute="top" id="6gG-tK-KW7"/>
+                            <constraint firstItem="nxZ-Gy-9Cz" firstAttribute="leading" secondItem="kyA-4z-sN7" secondAttribute="leading" id="AmO-sg-WuM"/>
+                            <constraint firstItem="tko-uX-8R7" firstAttribute="top" secondItem="sfU-CA-WR4" secondAttribute="top" constant="31" id="DKG-7O-fqq"/>
+                            <constraint firstItem="sfU-CA-WR4" firstAttribute="trailing" secondItem="XOh-BJ-az5" secondAttribute="trailing" constant="98" id="Djy-5N-neZ"/>
+                            <constraint firstItem="fCn-D9-M3s" firstAttribute="top" secondItem="ewk-ic-i6A" secondAttribute="bottom" constant="19" id="Gtw-an-Nnc"/>
+                            <constraint firstItem="ewk-ic-i6A" firstAttribute="top" secondItem="tko-uX-8R7" secondAttribute="bottom" constant="64" id="JHI-qZ-EL1"/>
+                            <constraint firstItem="grx-fk-O55" firstAttribute="top" secondItem="GZ0-sq-lgS" secondAttribute="bottom" constant="20" id="JWj-EW-xUz"/>
+                            <constraint firstItem="GZ0-sq-lgS" firstAttribute="leading" secondItem="fCn-D9-M3s" secondAttribute="trailing" constant="35.333333333333343" id="Kg7-vA-sa3"/>
+                            <constraint firstItem="Szi-7c-OmF" firstAttribute="centerX" secondItem="tko-uX-8R7" secondAttribute="centerX" id="Knx-jc-ukL"/>
+                            <constraint firstItem="nxZ-Gy-9Cz" firstAttribute="top" secondItem="zom-BE-dce" secondAttribute="bottom" constant="19" id="MPL-DW-Hr0"/>
+                            <constraint firstItem="tko-uX-8R7" firstAttribute="leading" secondItem="sfU-CA-WR4" secondAttribute="leading" constant="53.333333333333343" id="NOf-fl-3jE"/>
+                            <constraint firstItem="grx-fk-O55" firstAttribute="trailing" secondItem="q2I-tP-CmP" secondAttribute="trailing" id="NhH-CW-59A"/>
+                            <constraint firstItem="ewk-ic-i6A" firstAttribute="top" secondItem="bfz-Vf-qdi" secondAttribute="top" id="Oj7-qv-QgA"/>
+                            <constraint firstItem="nxZ-Gy-9Cz" firstAttribute="top" secondItem="q2I-tP-CmP" secondAttribute="top" id="W0K-rW-348"/>
+                            <constraint firstItem="grx-fk-O55" firstAttribute="leading" secondItem="q2I-tP-CmP" secondAttribute="leading" id="aQ0-ZF-vog"/>
+                            <constraint firstItem="GZ0-sq-lgS" firstAttribute="top" secondItem="bfz-Vf-qdi" secondAttribute="bottom" constant="19" id="acy-w4-dQs"/>
+                            <constraint firstItem="XOh-BJ-az5" firstAttribute="leading" secondItem="kyA-4z-sN7" secondAttribute="trailing" constant="30" id="c6D-P2-hgh"/>
+                            <constraint firstItem="bfz-Vf-qdi" firstAttribute="leading" secondItem="GZ0-sq-lgS" secondAttribute="leading" id="cBN-nV-F9d"/>
+                            <constraint firstItem="ewk-ic-i6A" firstAttribute="centerY" secondItem="bfz-Vf-qdi" secondAttribute="centerY" id="cFP-e6-BqU"/>
+                            <constraint firstItem="sfU-CA-WR4" firstAttribute="trailing" secondItem="grx-fk-O55" secondAttribute="trailing" constant="85" id="gEL-2f-rqd"/>
+                            <constraint firstItem="kyA-4z-sN7" firstAttribute="top" secondItem="nxZ-Gy-9Cz" secondAttribute="bottom" constant="19" id="gOl-RM-bu5"/>
+                            <constraint firstItem="tko-uX-8R7" firstAttribute="centerX" secondItem="sky-eP-O9M" secondAttribute="centerX" id="gb6-vZ-J6S"/>
+                            <constraint firstItem="q2I-tP-CmP" firstAttribute="top" secondItem="grx-fk-O55" secondAttribute="bottom" constant="17" id="h0X-lf-9HS"/>
+                            <constraint firstItem="q2I-tP-CmP" firstAttribute="leading" secondItem="XOh-BJ-az5" secondAttribute="leading" id="hwj-qy-gtU"/>
+                            <constraint firstItem="zom-BE-dce" firstAttribute="leading" secondItem="nxZ-Gy-9Cz" secondAttribute="leading" id="lJ5-pi-3Cb"/>
+                            <constraint firstItem="sfU-CA-WR4" firstAttribute="trailing" secondItem="GZ0-sq-lgS" secondAttribute="trailing" constant="84" id="mB8-Nr-CR0"/>
+                            <constraint firstItem="Szi-7c-OmF" firstAttribute="leading" secondItem="sfU-CA-WR4" secondAttribute="leading" constant="136.33333333333337" id="mLZ-hB-2dY"/>
+                            <constraint firstItem="ewk-ic-i6A" firstAttribute="leading" secondItem="sfU-CA-WR4" secondAttribute="leading" constant="25" id="qjc-eT-8wF"/>
+                            <constraint firstItem="nxZ-Gy-9Cz" firstAttribute="bottom" secondItem="q2I-tP-CmP" secondAttribute="bottom" id="qnF-th-nL8"/>
+                            <constraint firstItem="kyA-4z-sN7" firstAttribute="bottom" secondItem="XOh-BJ-az5" secondAttribute="bottom" id="skB-KF-WSe"/>
+                            <constraint firstItem="zom-BE-dce" firstAttribute="top" secondItem="fCn-D9-M3s" secondAttribute="bottom" constant="20.666666666666686" id="tp9-Rh-xFx"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lXz-AO-RwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQw-bH-HpH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1616.9230769230769" y="-28.436018957345969"/>
+            <point key="canvasLocation" x="1667.6923076923076" y="-28.436018957345969"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Jx-VK-562"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="Logo_monocromatic" width="482" height="321"/>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
