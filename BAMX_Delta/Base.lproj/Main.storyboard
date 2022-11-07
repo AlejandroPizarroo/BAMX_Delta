@@ -147,7 +147,7 @@
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu apellido aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZ0-sq-lgS">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu apellido aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZ0-sq-lgS" userLabel="Text Apellido">
                                 <rect key="frame" x="123" y="337.66666666666669" width="183" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="NrL-j9-7Cg"/>
@@ -155,16 +155,16 @@
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zom-BE-dce">
-                                <rect key="frame" x="24.999999999999996" y="378.66666666666669" width="40.666666666666657" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zom-BE-dce">
+                                <rect key="frame" x="24.999999999999996" y="378.66666666666669" width="62.666666666666657" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="XGY-Uv-60E"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxZ-Gy-9Cz">
-                                <rect key="frame" x="24.999999999999996" y="419.66666666666669" width="62.666666666666657" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxZ-Gy-9Cz">
+                                <rect key="frame" x="24.999999999999996" y="419.66666666666669" width="40.666666666666657" height="22"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -173,17 +173,17 @@
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-BJ-az5">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-BJ-az5" userLabel="Text Password">
                                 <rect key="frame" x="122" y="460.66666666666669" width="170" height="22"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example@mail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grx-fk-O55">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu número aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grx-fk-O55" userLabel="Text Phone">
                                 <rect key="frame" x="122" y="379.66666666666669" width="183" height="23"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu número aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2I-tP-CmP">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example@mail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2I-tP-CmP" userLabel="Text Mail">
                                 <rect key="frame" x="122" y="419.66666666666669" width="183" height="22"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -194,6 +194,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Crear cuenta">
                                     <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveUser:" destination="WBi-j0-9Fw" eventType="touchUpInside" id="Kd2-gO-urj"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-N9-c42">
                                 <rect key="frame" x="53.333333333333343" y="142" width="283.33333333333326" height="90.666666666666686"/>
@@ -259,6 +262,13 @@
                             <constraint firstItem="zom-BE-dce" firstAttribute="top" secondItem="fCn-D9-M3s" secondAttribute="bottom" constant="20.666666666666686" id="tp9-Rh-xFx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textApellido" destination="GZ0-sq-lgS" id="Wn1-Lk-jG7"/>
+                        <outlet property="textEmail" destination="q2I-tP-CmP" id="0vx-Dv-Nig"/>
+                        <outlet property="textName" destination="bfz-Vf-qdi" id="d2g-iv-zU9"/>
+                        <outlet property="textPassword" destination="XOh-BJ-az5" id="7qp-oV-unm"/>
+                        <outlet property="textPhone" destination="grx-fk-O55" id="tMH-wU-2a9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQw-bH-HpH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
