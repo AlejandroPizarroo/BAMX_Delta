@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F216911B2919E20500D42474 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216911A2919E20500D42474 /* FirebaseAuthManager.swift */; };
 		F2171DB328FB655A002ADAB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2171DB228FB655A002ADAB7 /* LoginViewController.swift */; };
 		F2171DBC28FB6E15002ADAB7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */; };
 		F21D5F6F291714EE00324EA5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F21D5F6E291714EE00324EA5 /* FirebaseAuth */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F216911A2919E20500D42474 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		F2171DB228FB655A002ADAB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F22A7CD9291962AB002838B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				F266665428F76A74005C192C /* ViewController.swift */,
 				F2171DB228FB655A002ADAB7 /* LoginViewController.swift */,
 				F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */,
+				F216911A2919E20500D42474 /* FirebaseAuthManager.swift */,
 				F266665628F76A74005C192C /* Main.storyboard */,
 				F266665928F76A78005C192C /* Assets.xcassets */,
 				F266665B28F76A78005C192C /* LaunchScreen.storyboard */,
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F216911B2919E20500D42474 /* FirebaseAuthManager.swift in Sources */,
 				F2171DB328FB655A002ADAB7 /* LoginViewController.swift in Sources */,
 				F2171DBC28FB6E15002ADAB7 /* RegisterViewController.swift in Sources */,
 				F266665528F76A74005C192C /* ViewController.swift in Sources */,

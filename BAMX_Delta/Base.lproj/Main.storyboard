@@ -23,7 +23,7 @@
                                     <segment title="Regístrate"/>
                                 </segments>
                                 <connections>
-                                    <segue destination="WBi-j0-9Fw" kind="presentation" modalPresentationStyle="fullScreen" id="4Jx-VK-562"/>
+                                    <segue destination="WBi-j0-9Fw" kind="presentation" identifier="goLogin" modalPresentationStyle="fullScreen" id="4Jx-VK-562"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¡HOLA DE NUEVO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-eO-11L">
@@ -126,7 +126,7 @@
                                     <segment title="Regístrate"/>
                                 </segments>
                                 <connections>
-                                    <segue destination="qo6-ai-ICh" kind="presentation" modalPresentationStyle="fullScreen" id="Lhx-S9-iqN"/>
+                                    <segue destination="qo6-ai-ICh" kind="presentation" identifier="goRegister" modalPresentationStyle="fullScreen" id="Lhx-S9-iqN"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewk-ic-i6A">
@@ -169,14 +169,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyA-4z-sN7">
-                                <rect key="frame" x="25" y="460.66666666666669" width="67" height="22"/>
+                                <rect key="frame" x="25" y="460.66666666666669" width="67" height="21"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-BJ-az5" userLabel="Text Password">
-                                <rect key="frame" x="122" y="460.66666666666669" width="170" height="22"/>
+                                <rect key="frame" x="122" y="460.66666666666669" width="170" height="21"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu número aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grx-fk-O55" userLabel="Text Phone">
                                 <rect key="frame" x="122" y="379.66666666666669" width="183" height="23"/>
