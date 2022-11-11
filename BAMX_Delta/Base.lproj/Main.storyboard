@@ -23,7 +23,7 @@
                                     <segment title="Regístrate"/>
                                 </segments>
                                 <connections>
-                                    <segue destination="WBi-j0-9Fw" kind="presentation" identifier="goLogin" modalPresentationStyle="fullScreen" id="4Jx-VK-562"/>
+                                    <segue destination="WBi-j0-9Fw" kind="presentation" identifier="goRegister" modalPresentationStyle="fullScreen" id="llO-6K-Ekf"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¡HOLA DE NUEVO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-eO-11L">
@@ -61,11 +61,15 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWh-at-Cb6">
-                                <rect key="frame" x="91" y="394" width="209" height="35"/>
+                                <rect key="frame" x="135" y="394" width="121" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="¿Olvidaste la contraseña?">
+                                <buttonConfiguration key="configuration" style="plain" title="Iniciar sesión">
                                     <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logInUser:" destination="qo6-ai-ICh" eventType="touchUpInside" id="p93-DE-4YK"/>
+                                    <segue destination="EPg-Z6-1gM" kind="presentation" identifier="goMain" modalPresentationStyle="fullScreen" id="Y5U-JY-NQ6"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOl-dZ-9LJ">
                                 <rect key="frame" x="127" y="339" width="155" height="22"/>
@@ -103,6 +107,10 @@
                             <constraint firstItem="Iox-HC-YQL" firstAttribute="top" secondItem="3qG-yC-y9w" secondAttribute="top" constant="31" id="xwj-s1-2js"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textEmail" destination="wu5-Ef-2JA" id="2fe-eF-u26"/>
+                        <outlet property="textPassword" destination="WCD-hg-A2I" id="ZeF-jN-Z3e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqf-SU-TJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,7 +134,7 @@
                                     <segment title="Regístrate"/>
                                 </segments>
                                 <connections>
-                                    <segue destination="qo6-ai-ICh" kind="presentation" identifier="goRegister" modalPresentationStyle="fullScreen" id="Lhx-S9-iqN"/>
+                                    <segue destination="qo6-ai-ICh" kind="presentation" identifier="goLogin" modalPresentationStyle="fullScreen" id="x84-6u-Xsi"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewk-ic-i6A">
@@ -272,7 +280,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQw-bH-HpH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1667.6923076923076" y="-28.436018957345969"/>
+            <point key="canvasLocation" x="1668" y="-28"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wR6-Sf-DQy">
+            <objects>
+                <viewController id="EPg-Z6-1gM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Scd-R3-bFy">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZx-dq-Buu">
+                                <rect key="frame" x="176.66666666666666" y="411.66666666666669" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yRB-o8-tJq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pZx-dq-Buu" firstAttribute="centerX" secondItem="Scd-R3-bFy" secondAttribute="centerX" id="5cn-Hh-Ebb"/>
+                            <constraint firstItem="pZx-dq-Buu" firstAttribute="centerY" secondItem="Scd-R3-bFy" secondAttribute="centerY" id="KqM-2I-4pg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Byf-ZF-OXE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOi-Mj-bUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2490.7692307692305" y="-28.436018957345969"/>
         </scene>
     </scenes>
     <resources>
