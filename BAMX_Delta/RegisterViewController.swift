@@ -70,7 +70,7 @@ class RegisterViewController: UIViewController {
                     guard let `self` = self else {return}
                     
                     if success{
-                        message = "El usuario se creó exitosamente"
+                        message = "El usuario se creó exitosamente!"
                     }else{
                         message = "Hubo un problema al crear el usuario"
                     }
