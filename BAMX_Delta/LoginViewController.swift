@@ -11,7 +11,7 @@ class LoginViewController: UIViewController {
 
     
     @IBOutlet weak var textEmail: UITextField!
-    @IBOutlet weak var textPassword: UILabel!
+    @IBOutlet weak var textPassword: UITextField!
     
     var isAccess = false
     
@@ -21,18 +21,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func logInUser(_ sender: Any) {
-        if textEmail.text?.isEmpty == true || textPassword.text?.isEmpty == true {
-        
-            displayAlertMessage(message: "You have empty textfields")
-        }
-        else{
-            if verifyEmail(email: textEmail.text!){}
-            else{
-                self.displayAlertMessage(message: "Email is wrong!")
-
-            }
-        }
-        
+        // perform segue
     }
     
     func verifyEmail(email: String) -> Bool{
@@ -48,13 +37,13 @@ class LoginViewController: UIViewController {
         }
     
     func displayAlertMessage(message:String){
-        let alertController = UIAlertController(title: "App Message", message: message, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Mensaje de la aplicación", message: message, preferredStyle: .alert)
         
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
     }
-    /*
+    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "goMain"{
             if textEmail.text?.isEmpty == true || textPassword.text?.isEmpty == true{
@@ -75,8 +64,8 @@ class LoginViewController: UIViewController {
                             self.performSegue(withIdentifier: "goMain", sender: nil)
                         }
                         else{
-                                self.isAccess = false
-                                self.displayAlertMessage(message: "Please check your login data")
+                            self.isAccess = false
+                            self.displayAlertMessage(message: "Please check your login data")
                         }
                     }
                 }
@@ -86,14 +75,15 @@ class LoginViewController: UIViewController {
                 }
                                          
             }
+        }else{
+            self.performSegue(withIdentifier: "goRegister", sender: nil)
+            return false
         }
         return isAccess
     }
     
-    */
-    
         
-    }
+}
     
 
 

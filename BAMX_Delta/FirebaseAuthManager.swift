@@ -15,8 +15,8 @@ class FirebaseAuthManager{
             
             (authResult, error) in
             
-            if let usuario = authResult?.user{
-                print(usuario)
+            if let user = authResult?.user{
+                print(user)
                 completionBlock(true)
             }else{
                 completionBlock(false)
@@ -28,8 +28,8 @@ class FirebaseAuthManager{
         
         Auth.auth().signIn(withEmail: email, password: password){
             (authResult, error) in
-            if let usuario = authResult?.user{
-                print(usuario)
+            if let user = authResult?.user{
+                print(user)
                 completionBlock(true)
             }else{
                 completionBlock(false)
