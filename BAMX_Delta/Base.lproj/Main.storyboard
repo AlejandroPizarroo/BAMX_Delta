@@ -291,83 +291,111 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9U-DC-rXw" userLabel="Spacer">
-                                <rect key="frame" x="0.0" y="744" width="390" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80392156862745101" green="0.062745098039215685" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="FU5-Ny-etK">
+                                <rect key="frame" x="17" y="775" width="358" height="34.333333333333371"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="YiZ-RA-hwp">
+                                        <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="34.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl5-HW-U4F">
+                                                <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="34.333333333333336"/>
+                                                <color key="tintColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="questionmark.circle" catalog="system" symbolScale="large" variableValue="0.0"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="h8f-r9-zUQ">
+                                        <rect key="frame" x="102.66666666666667" y="0.0" width="49.666666666666671" height="34.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qp1-i0-5du">
+                                                <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="34.333333333333336"/>
+                                                <color key="tintColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="house.lodge.circle" catalog="system" symbolScale="large" variableValue="1"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9dL-iW-5Nv">
+                                        <rect key="frame" x="205.33333333333334" y="0.0" width="49.666666666666657" height="34.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxR-fz-5WF">
+                                                <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="34.333333333333336"/>
+                                                <color key="tintColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="coloncurrencysign.circle" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="lgl-du-GU0">
+                                        <rect key="frame" x="308" y="0.0" width="50" height="34.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrs-Py-aTh">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="34.333333333333336"/>
+                                                <color key="tintColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system"/>
+                                                <connections>
+                                                    <segue destination="T0x-pI-mqL" kind="presentation" modalPresentationStyle="fullScreen" id="NXk-cR-34v"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lgl-du-GU0" firstAttribute="leading" secondItem="FU5-Ny-etK" secondAttribute="leading" constant="308" id="9pw-Gz-bbq"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2gA-hy-VDP">
+                                <rect key="frame" x="81" y="38" width="229" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="uCq-fS-tWb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿QUIÉNES SOMOS?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhF-qt-PG4">
+                                <rect key="frame" x="36" y="154" width="226" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="RTG-TV-Y9A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                <color key="textColor" red="0.94509803921568625" green="0.59903126959999997" blue="0.24163907770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl5-HW-U4F">
-                                <rect key="frame" x="22" y="754" width="49.666666666666657" height="34.333333333333371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="questionmark.circle" catalog="system" symbolScale="large"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qp1-i0-5du">
-                                <rect key="frame" x="120.66666666666666" y="754" width="49.666666666666657" height="34.333333333333371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="house.lodge.circle" catalog="system" symbolScale="large" variableValue="1"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxR-fz-5WF">
-                                <rect key="frame" x="219.33333333333337" y="754" width="49.666666666666629" height="34.333333333333371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="coloncurrencysign.circle" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrs-Py-aTh">
-                                <rect key="frame" x="318" y="754" width="49.666666666666686" height="34.333333333333371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system"/>
-                                <connections>
-                                    <segue destination="T0x-pI-mqL" kind="presentation" modalPresentationStyle="fullScreen" id="NXk-cR-34v"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quiénes somos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2t-Ik-C8n">
-                                <rect key="frame" x="7" y="795" width="79" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Campañas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqM-98-ble">
-                                <rect key="frame" x="114" y="795" width="62" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Voluntariado y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2K-Aj-Qvn">
-                                <rect key="frame" x="208" y="795" width="73" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="donaciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-i9-joH">
-                                <rect key="frame" x="210" y="805" width="68" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mi cuenta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVT-Oe-EW9">
-                                <rect key="frame" x="313" y="795" width="59" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bP7-as-Ohi" customClass="YTPlayerView">
+                                <rect key="frame" x="17" y="243" width="357" height="187"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.59903126959999997" blue="0.24163907770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yRB-o8-tJq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bP7-as-Ohi" secondAttribute="bottom" constant="414" id="1yq-Od-lV4"/>
+                            <constraint firstItem="2gA-hy-VDP" firstAttribute="centerX" secondItem="bP7-as-Ohi" secondAttribute="centerX" id="2Ec-1U-UuV"/>
+                            <constraint firstItem="yRB-o8-tJq" firstAttribute="trailing" secondItem="jhF-qt-PG4" secondAttribute="trailing" constant="128" id="Gw5-iM-7D6"/>
+                            <constraint firstItem="2gA-hy-VDP" firstAttribute="centerX" secondItem="Scd-R3-bFy" secondAttribute="centerX" id="SA5-St-12B"/>
+                            <constraint firstItem="jhF-qt-PG4" firstAttribute="leading" secondItem="yRB-o8-tJq" secondAttribute="leading" constant="36" id="aZ7-Gm-YMt"/>
+                            <constraint firstItem="bP7-as-Ohi" firstAttribute="centerX" secondItem="FU5-Ny-etK" secondAttribute="centerX" id="e8f-lQ-jXF"/>
+                            <constraint firstItem="jhF-qt-PG4" firstAttribute="top" secondItem="2gA-hy-VDP" secondAttribute="bottom" constant="8" id="gig-UQ-sHY"/>
+                            <constraint firstItem="2gA-hy-VDP" firstAttribute="top" secondItem="Scd-R3-bFy" secondAttribute="topMargin" constant="-9" id="hFo-Pk-ble"/>
+                            <constraint firstItem="yRB-o8-tJq" firstAttribute="bottom" secondItem="FU5-Ny-etK" secondAttribute="bottom" constant="0.66666666666662877" id="hOk-cU-rI9"/>
+                            <constraint firstItem="2gA-hy-VDP" firstAttribute="leading" secondItem="yRB-o8-tJq" secondAttribute="leading" constant="81" id="uHf-ET-UcN"/>
+                            <constraint firstItem="bP7-as-Ohi" firstAttribute="leading" secondItem="FU5-Ny-etK" secondAttribute="leading" id="vJ8-Ge-y4M"/>
+                            <constraint firstItem="bP7-as-Ohi" firstAttribute="trailing" secondItem="Scd-R3-bFy" secondAttribute="trailingMargin" id="wE5-S5-f30"/>
+                            <constraint firstItem="bP7-as-Ohi" firstAttribute="top" secondItem="jhF-qt-PG4" secondAttribute="bottom" constant="47" id="xxi-78-9fm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboutUs" destination="fl5-HW-U4F" id="aLu-GU-ka2"/>
+                        <outlet property="campaigns" destination="Qp1-i0-5du" id="YaB-Vo-jIi"/>
+                        <outlet property="donations" destination="FxR-fz-5WF" id="537-kh-Hbz"/>
+                        <outlet property="myAccount" destination="hrs-Py-aTh" id="cPM-i2-k5w"/>
+                        <outlet property="playerView" destination="bP7-as-Ohi" id="RAE-q4-IRQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOi-Mj-bUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,6 +448,7 @@
     <resources>
         <image name="coloncurrencysign.circle" catalog="system" width="128" height="123"/>
         <image name="house.lodge.circle" catalog="system" width="128" height="123"/>
+        <image name="logo" width="512" height="512"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="questionmark.circle" catalog="system" width="128" height="123"/>
         <systemColor name="placeholderTextColor">
