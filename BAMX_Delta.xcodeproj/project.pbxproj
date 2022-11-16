@@ -24,6 +24,8 @@
 		F266666828F76A7A005C192C /* BAMX_DeltaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266666728F76A7A005C192C /* BAMX_DeltaTests.swift */; };
 		F266667228F76A7A005C192C /* BAMX_DeltaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266667128F76A7A005C192C /* BAMX_DeltaUITests.swift */; };
 		F266667428F76A7A005C192C /* BAMX_DeltaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266667328F76A7A005C192C /* BAMX_DeltaUITestsLaunchTests.swift */; };
+		F2E2048A29246ECE0043ED6E /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2048929246ECE0043ED6E /* MyAccountViewController.swift */; };
+		F2F163EA29229B9F00F1C7F9 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F163E929229B9E00F1C7F9 /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		F266666D28F76A7A005C192C /* BAMX_DeltaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAMX_DeltaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F266667128F76A7A005C192C /* BAMX_DeltaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAMX_DeltaUITests.swift; sourceTree = "<group>"; };
 		F266667328F76A7A005C192C /* BAMX_DeltaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAMX_DeltaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2E2048929246ECE0043ED6E /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		F2F163E929229B9E00F1C7F9 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				F266665428F76A74005C192C /* ViewController.swift */,
 				F2171DB228FB655A002ADAB7 /* LoginViewController.swift */,
 				F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */,
+				F2F163E929229B9E00F1C7F9 /* AboutUsViewController.swift */,
+				F2E2048929246ECE0043ED6E /* MyAccountViewController.swift */,
 				F216911A2919E20500D42474 /* FirebaseAuthManager.swift */,
 				F266665628F76A74005C192C /* Main.storyboard */,
 				F266665928F76A78005C192C /* Assets.xcassets */,
@@ -288,8 +294,10 @@
 			files = (
 				F216911B2919E20500D42474 /* FirebaseAuthManager.swift in Sources */,
 				F2171DB328FB655A002ADAB7 /* LoginViewController.swift in Sources */,
+				F2E2048A29246ECE0043ED6E /* MyAccountViewController.swift in Sources */,
 				F2171DBC28FB6E15002ADAB7 /* RegisterViewController.swift in Sources */,
 				F266665528F76A74005C192C /* ViewController.swift in Sources */,
+				F2F163EA29229B9F00F1C7F9 /* AboutUsViewController.swift in Sources */,
 				F266665128F76A74005C192C /* AppDelegate.swift in Sources */,
 				F266665328F76A74005C192C /* SceneDelegate.swift in Sources */,
 			);

@@ -26,8 +26,6 @@ class RegisterViewController: UIViewController {
     func displayAlertMessage(message:String){
         let alertController = UIAlertController(title: "Mensaje de la aplicación", message: message, preferredStyle: .alert)
         
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
         self.present(alertController, animated: true, completion: nil)
     }
     
@@ -97,13 +95,6 @@ class RegisterViewController: UIViewController {
             }
                 
             let alertController = UIAlertController(title: "Mensaje de la aplición ", message: message, preferredStyle: .alert)
-                    
-            let OKAction = UIAlertAction(title: "OK", style: .default)
-                {(action: UIAlertAction!) in
-                    print ("OK was pressed")
-                    }
-                    
-            alertController.addAction(OKAction)
                     
             self.present(alertController, animated: true, completion: nil)
         }

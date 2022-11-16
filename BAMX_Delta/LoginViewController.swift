@@ -47,7 +47,7 @@ class LoginViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "goMain"{
             if textEmail.text?.isEmpty == true || textPassword.text?.isEmpty == true{
-                displayAlertMessage(message: "Please complete textfields")
+                displayAlertMessage(message: "Favor de completar los campos de texto")
             }
             else{
                 if verifyEmail(email: textEmail.text!){
@@ -65,12 +65,12 @@ class LoginViewController: UIViewController {
                         }
                         else{
                             self.isAccess = false
-                            self.displayAlertMessage(message: "Please check your login data")
+                            self.displayAlertMessage(message: "Correo o contraseña incorrecta")
                         }
                     }
                 }
                 else{
-                    displayAlertMessage(message: "Text is not email")
+                    displayAlertMessage(message: "El texto no es un email")
                     return false
                 }
                                          
