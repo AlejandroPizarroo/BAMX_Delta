@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qo6-ai-ICh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EPg-Z6-1gM">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -67,10 +67,10 @@
                                     <segue destination="EPg-Z6-1gM" kind="presentation" identifier="goMain" modalPresentationStyle="fullScreen" id="Y5U-JY-NQ6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOl-dZ-9LJ">
-                                <rect key="frame" x="128" y="339.33333333333331" width="155" height="22"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ingresa tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOl-dZ-9LJ">
+                                <rect key="frame" x="128" y="339" width="208" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCD-hg-A2I">
                                 <rect key="frame" x="9" y="340" width="95" height="21"/>
@@ -115,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqf-SU-TJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867.69230769230762" y="-28.436018957345969"/>
+            <point key="canvasLocation" x="910.76923076923072" y="-354.02843601895734"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="EQd-nr-uy1">
@@ -281,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQw-bH-HpH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1668" y="-28"/>
+            <point key="canvasLocation" x="911" y="521"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="wR6-Sf-DQy">
@@ -291,8 +291,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="FU5-Ny-etK">
-                                <rect key="frame" x="17" y="775" width="358" height="34.333333333333371"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="FU5-Ny-etK">
+                                <rect key="frame" x="15" y="775" width="360" height="34.333333333333371"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="YiZ-RA-hwp">
                                         <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="34.333333333333336"/>
@@ -333,15 +333,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="lgl-du-GU0">
-                                        <rect key="frame" x="308" y="0.0" width="50" height="34.333333333333336"/>
+                                        <rect key="frame" x="308" y="0.0" width="52" height="34.333333333333336"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrs-Py-aTh">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="34.333333333333336"/>
                                                 <color key="tintColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system"/>
                                                 <connections>
-                                                    <segue destination="T0x-pI-mqL" kind="presentation" modalPresentationStyle="fullScreen" id="NXk-cR-34v"/>
+                                                    <segue destination="T0x-pI-mqL" kind="presentation" identifier="myAccount" modalPresentationStyle="fullScreen" id="NXk-cR-34v"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -376,7 +376,9 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="bP7-as-Ohi" secondAttribute="bottom" constant="414" id="1yq-Od-lV4"/>
                             <constraint firstItem="2gA-hy-VDP" firstAttribute="centerX" secondItem="bP7-as-Ohi" secondAttribute="centerX" id="2Ec-1U-UuV"/>
+                            <constraint firstItem="yRB-o8-tJq" firstAttribute="trailing" secondItem="FU5-Ny-etK" secondAttribute="trailing" constant="15" id="4jv-Kl-Kae"/>
                             <constraint firstItem="yRB-o8-tJq" firstAttribute="trailing" secondItem="jhF-qt-PG4" secondAttribute="trailing" constant="128" id="Gw5-iM-7D6"/>
+                            <constraint firstItem="FU5-Ny-etK" firstAttribute="leading" secondItem="yRB-o8-tJq" secondAttribute="leading" constant="15" id="LBI-mz-K9C"/>
                             <constraint firstItem="2gA-hy-VDP" firstAttribute="centerX" secondItem="Scd-R3-bFy" secondAttribute="centerX" id="SA5-St-12B"/>
                             <constraint firstItem="jhF-qt-PG4" firstAttribute="leading" secondItem="yRB-o8-tJq" secondAttribute="leading" constant="36" id="aZ7-Gm-YMt"/>
                             <constraint firstItem="bP7-as-Ohi" firstAttribute="centerX" secondItem="FU5-Ny-etK" secondAttribute="centerX" id="e8f-lQ-jXF"/>
@@ -399,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOi-Mj-bUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2596.9230769230767" y="-354.02843601895734"/>
+            <point key="canvasLocation" x="2148" y="-354"/>
         </scene>
         <!--My Account View Controller-->
         <scene sceneID="hx8-HE-PHk">
@@ -431,6 +433,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Cerrar Sesión">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qo6-ai-ICh" kind="presentation" identifier="logOut" modalPresentationStyle="fullScreen" id="Cji-LI-z94"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CoB-hw-ugl"/>
@@ -442,9 +447,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1U-bw-WoB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2596.9230769230767" y="359.71563981042652"/>
+            <point key="canvasLocation" x="2148" y="520"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="llO-6K-Ekf"/>
+        <segue reference="x84-6u-Xsi"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="coloncurrencysign.circle" catalog="system" width="128" height="123"/>
         <image name="house.lodge.circle" catalog="system" width="128" height="123"/>

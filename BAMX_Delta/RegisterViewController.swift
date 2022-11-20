@@ -25,8 +25,19 @@ class RegisterViewController: UIViewController {
 
     func displayAlertMessage(message:String){
         let alertController = UIAlertController(title: "Mensaje de la aplicación", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func displayAlertMessageBlank(message:String){
+        let alertController = UIAlertController(title: "Mensaje de la aplicación", message: message, preferredStyle: .alert)
+        self.present(alertController, animated: true, completion: nil)
+        
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when){
+            alertController.dismiss(animated: true, completion: nil)
+        }
     }
     
     func verifyEmail(email: String) -> Bool{
@@ -44,8 +55,8 @@ class RegisterViewController: UIViewController {
         }
     
     @IBAction func saveUser(_ sender: Any) {
-    
-// MARK: Registrar usuario
+        
+        // MARK: Registrar usuario
         
         let key = UUID().uuidString
         let object : [String:Any] = [
@@ -80,27 +91,29 @@ class RegisterViewController: UIViewController {
             }
             
         }
+
         
         ref.child(key).setValue(object){
             (error: Error?, ref:DatabaseReference) in
-                    
+            
             var message = ""
-                    
+            
             if let error = error {
                 message = "Ha ocurrido un error"
-                        print(error)
+                print(error)
             }
             else{
                 message = "El usuario se creó exitosamente!"
             }
-                
-            let alertController = UIAlertController(title: "Mensaje de la aplición ", message: message, preferredStyle: .alert)
-                    
-            self.present(alertController, animated: true, completion: nil)
+            self.displayAlertMessageBlank(message: message)
         }
         
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+           self.performSegue(withIdentifier: "goLogin", sender: self )
+        })
     }
+
+    
 }
     
 

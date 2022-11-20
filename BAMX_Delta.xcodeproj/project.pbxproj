@@ -17,6 +17,7 @@
 		F22A7CDA291962AB002838B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F22A7CD9291962AB002838B2 /* GoogleService-Info.plist */; };
 		F22A7CDB291962AB002838B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F22A7CD9291962AB002838B2 /* GoogleService-Info.plist */; };
 		F22A7CDC291962AB002838B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F22A7CD9291962AB002838B2 /* GoogleService-Info.plist */; };
+		F23104BE292960D700BCD719 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23104BD292960D700BCD719 /* Usuario.swift */; };
 		F266665128F76A74005C192C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266665028F76A74005C192C /* AppDelegate.swift */; };
 		F266665328F76A74005C192C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266665228F76A74005C192C /* SceneDelegate.swift */; };
 		F266665528F76A74005C192C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F266665428F76A74005C192C /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		F2171DB228FB655A002ADAB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F22A7CD9291962AB002838B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F23104BD292960D700BCD719 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		F266664D28F76A74005C192C /* BAMX_Delta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAMX_Delta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F266665028F76A74005C192C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F266665228F76A74005C192C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,7 +131,6 @@
 				BE01436F7253D73023EB8CB4 /* Pods-BAMX_DeltaTests.debug.xcconfig */,
 				10974F3C14007FC94FF3FA92 /* Pods-BAMX_DeltaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -166,6 +167,7 @@
 				F2F163E929229B9E00F1C7F9 /* AboutUsViewController.swift */,
 				F2E2048929246ECE0043ED6E /* MyAccountViewController.swift */,
 				F216911A2919E20500D42474 /* FirebaseAuthManager.swift */,
+				F23104BD292960D700BCD719 /* Usuario.swift */,
 				F266665628F76A74005C192C /* Main.storyboard */,
 				F266665928F76A78005C192C /* Assets.xcassets */,
 				F266665B28F76A78005C192C /* LaunchScreen.storyboard */,
@@ -446,6 +448,7 @@
 				F2E2048A29246ECE0043ED6E /* MyAccountViewController.swift in Sources */,
 				F2171DBC28FB6E15002ADAB7 /* RegisterViewController.swift in Sources */,
 				F266665528F76A74005C192C /* ViewController.swift in Sources */,
+				F23104BE292960D700BCD719 /* Usuario.swift in Sources */,
 				F2F163EA29229B9F00F1C7F9 /* AboutUsViewController.swift in Sources */,
 				F266665128F76A74005C192C /* AppDelegate.swift in Sources */,
 				F266665328F76A74005C192C /* SceneDelegate.swift in Sources */,
