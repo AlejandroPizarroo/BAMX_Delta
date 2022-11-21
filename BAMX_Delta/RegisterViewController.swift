@@ -54,6 +54,20 @@ class RegisterViewController: UIViewController {
             }
         }
     
+    func verifySecurePassword(password: String) -> Bool{
+        let passwordRegex = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+        // Requerimientos de contraseña: Al menos una letra mayuscula, una minuscula, un digito, un caracter especial y longitud minima de 8
+        
+        let passwordPredicate = NSPredicate(format: "SELF MATCHES%@", passwordRegex)
+        
+        if passwordPredicate.evaluate(with: textPassword.text!){
+            return true
+        }else{
+            return false
+        }
+        
+    }
+    
     @IBAction func saveUser(_ sender: Any) {
         
         // MARK: Registrar usuario
@@ -69,23 +83,29 @@ class RegisterViewController: UIViewController {
             displayAlertMessage(message: "Tienes campos de texto vacíos")
         }else{
             if verifyEmail(email: textEmail.text!){
-                let sgManager = FirebaseAuthManager()
-                
-                sgManager.createUser(email: textEmail.text!, password: textPassword.text!){
-                    [weak self] (success) in
+                if verifySecurePassword(password: textPassword.text!){
+                    let sgManager = FirebaseAuthManager()
                     
-                    var message = ""
-                    
-                    guard let `self` = self else {return}
-                    
-                    if success{
-                        message = "El usuario se creó exitosamente!"
-                    }else{
-                        message = "Hubo un problema al crear el usuario"
+                    sgManager.createUser(email: textEmail.text!, password: textPassword.text!){
+                        [weak self] (success) in
+                        
+                        var message = ""
+                        
+                        guard let `self` = self else {return}
+                        
+                        if success{
+                            message = "El usuario se creó exitosamente!"
+                        }else{
+                            message = "Hubo un problema al crear el usuario"
+                        }
+                        
+                        self.displayAlertMessage(message: message)
                     }
                     
-                    self.displayAlertMessage(message: message)
+                }else{
+                    self.displayAlertMessage(message: "La contraseña debe incluir al menos una letra mayúscula, una minúscula, un dígito, un carácter especial y longitud mínima de 8 caracteres")
                 }
+                
             }else{
                 self.displayAlertMessage(message: "El email es incorrecto!")
             }

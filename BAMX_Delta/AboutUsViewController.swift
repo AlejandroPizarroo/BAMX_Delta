@@ -44,7 +44,7 @@ class AboutUsViewController: UIViewController {
             
             displayMessage(message: "El usuario " + value + " ha iniciado sesión")
         }
-        playerView.load(withVideoId: "p38WgakuYDo") // ID del video que queremos mostrar
+        playerView.load(withVideoId: "VUQ5VYnNdGM") // ID del video que queremos mostrar
     }
     
     
