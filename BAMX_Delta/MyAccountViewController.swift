@@ -5,19 +5,40 @@
 //  Created by Alejandro Pizarro on 15/11/22.
 //
 
+import Firebase
+import FirebaseAuth
 import Foundation
 import UIKit
 
-class MyAccountViewController: UIViewController {
+extension UserDefaults{
+    @NSManaged var nombre: String
+}
+
+class MyAccountViewController: UIViewController{
 
 
     @IBOutlet weak var logOut: UIButton!
+    
+    @IBOutlet weak var currentUserLabel: UILabel!
+    
+    var udObservation: NSKeyValueObservation?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         logOut.layer.cornerRadius = 10
+        
+        let ud = UserDefaults.standard
+        currentUserLabel.text = String(ud.string(forKey: "nombre") ?? "nil")
+        udObservation = ud.observe(\.nombre, options: .new) {ud, change in
+            if let newValue = change.newValue{
+                self.currentUserLabel.text = String(newValue)
+            }
+        }
+        
     }
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         if let value = UserDefaults.standard.string(forKey: "loggedUser"){

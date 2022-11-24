@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class AboutUsViewController: UIViewController {
+class AboutUsViewController: UIViewController{
     
     @IBOutlet var playerView : YTPlayerView!
 
@@ -42,7 +42,7 @@ class AboutUsViewController: UIViewController {
                 self.items = newUser
             })
             
-            displayMessage(message: "El usuario " + value + " ha iniciado sesión")
+            displayMessage(message: "El usuario " + value + " ha iniciado sesión (viewDidLoad)")
         }
         playerView.load(withVideoId: "VUQ5VYnNdGM") // ID del video que queremos mostrar
     }
@@ -51,7 +51,8 @@ class AboutUsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let value = UserDefaults.standard.string(forKey: "loggedUser"){
-            displayMessage(message: "El usuario " + value + " ha iniciado sesión")
+            print(value + "ha iniciado sesión")
+            //displayMessage(message: "El usuario " + value + " ha iniciado sesión (viewDidAppear)")
         }
         else{
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {

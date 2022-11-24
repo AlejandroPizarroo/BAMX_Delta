@@ -12,6 +12,7 @@
 		F216911B2919E20500D42474 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216911A2919E20500D42474 /* FirebaseAuthManager.swift */; };
 		F2171DB328FB655A002ADAB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2171DB228FB655A002ADAB7 /* LoginViewController.swift */; };
 		F2171DBC28FB6E15002ADAB7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */; };
+		F21A5F18292E594800ED5064 /* CampaignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21A5F17292E594800ED5064 /* CampaignsViewController.swift */; };
 		F21D5F6F291714EE00324EA5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F21D5F6E291714EE00324EA5 /* FirebaseAuth */; };
 		F21D5F71291714EE00324EA5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F21D5F70291714EE00324EA5 /* FirebaseDatabase */; };
 		F22A7CDA291962AB002838B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F22A7CD9291962AB002838B2 /* GoogleService-Info.plist */; };
@@ -62,6 +63,7 @@
 		F216911A2919E20500D42474 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		F2171DB228FB655A002ADAB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F21A5F17292E594800ED5064 /* CampaignsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignsViewController.swift; sourceTree = "<group>"; };
 		F22A7CD9291962AB002838B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F23104BD292960D700BCD719 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		F266664D28F76A74005C192C /* BAMX_Delta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAMX_Delta.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 				F2171DB228FB655A002ADAB7 /* LoginViewController.swift */,
 				F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */,
 				F2F163E929229B9E00F1C7F9 /* AboutUsViewController.swift */,
+				F21A5F17292E594800ED5064 /* CampaignsViewController.swift */,
 				F2E2048929246ECE0043ED6E /* MyAccountViewController.swift */,
 				F216911A2919E20500D42474 /* FirebaseAuthManager.swift */,
 				F23104BD292960D700BCD719 /* Usuario.swift */,
@@ -451,6 +454,7 @@
 				F23104BE292960D700BCD719 /* Usuario.swift in Sources */,
 				F2F163EA29229B9F00F1C7F9 /* AboutUsViewController.swift in Sources */,
 				F266665128F76A74005C192C /* AppDelegate.swift in Sources */,
+				F21A5F18292E594800ED5064 /* CampaignsViewController.swift in Sources */,
 				F266665328F76A74005C192C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
