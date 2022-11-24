@@ -328,6 +328,9 @@
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="dollarsign.circle" catalog="system"/>
+                                        <connections>
+                                            <segue destination="Gov-YK-GDb" kind="presentation" identifier="goDonationsMain" modalPresentationStyle="fullScreen" id="sGE-zL-dQ0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrs-Py-aTh">
                                         <rect key="frame" x="309" y="0.0" width="49" height="34"/>
@@ -511,6 +514,9 @@
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="dollarsign.circle" catalog="system"/>
+                                        <connections>
+                                            <segue destination="Gov-YK-GDb" kind="presentation" identifier="goDonations0" modalPresentationStyle="fullScreen" id="LW9-7l-8Nb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjS-oP-oRd">
                                         <rect key="frame" x="309" y="0.0" width="49" height="34"/>
@@ -614,7 +620,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1U-bw-WoB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2143.4782608695655" y="484.82142857142856"/>
+            <point key="canvasLocation" x="2146" y="558"/>
         </scene>
         <!--Campaigns View Controller-->
         <scene sceneID="Fu8-QH-4Ko">
@@ -624,7 +630,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="yin-p2-TJh">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="yin-p2-TJh">
                                 <rect key="frame" x="27.5" y="828" width="359" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK8-ZI-oGQ">
@@ -661,6 +667,9 @@
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="dollarsign.circle" catalog="system"/>
+                                        <connections>
+                                            <segue destination="Gov-YK-GDb" kind="presentation" identifier="goDonations1" modalPresentationStyle="fullScreen" id="g4G-5P-1Sq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feq-QS-sBY">
                                         <rect key="frame" x="309" y="0.0" width="50" height="34"/>
@@ -673,11 +682,21 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CAMPAÑAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyD-Mh-5HV">
+                                <rect key="frame" x="161" y="438" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RTW-Zw-SMW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="LyD-Mh-5HV" firstAttribute="top" secondItem="RTW-Zw-SMW" secondAttribute="top" constant="390" id="JtM-YX-M0f"/>
                             <constraint firstItem="yin-p2-TJh" firstAttribute="bottom" secondItem="RTW-Zw-SMW" secondAttribute="bottom" id="OSp-6h-9EN"/>
+                            <constraint firstItem="LyD-Mh-5HV" firstAttribute="centerX" secondItem="yin-p2-TJh" secondAttribute="centerX" id="e5Z-pi-g8X"/>
+                            <constraint firstItem="LyD-Mh-5HV" firstAttribute="centerY" secondItem="Jct-J8-DPd" secondAttribute="centerY" id="fxd-I6-Xiz"/>
+                            <constraint firstItem="LyD-Mh-5HV" firstAttribute="centerX" secondItem="Jct-J8-DPd" secondAttribute="centerX" id="uXG-5u-LVK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fkg-hI-3Mx"/>
@@ -686,11 +705,205 @@
             </objects>
             <point key="canvasLocation" x="3276.811594202899" y="-354.24107142857139"/>
         </scene>
+        <!--Volunteer View Controller-->
+        <scene sceneID="XDo-D0-iap">
+            <objects>
+                <viewController id="TkR-sG-iDR" customClass="VolunteerViewController" customModule="BAMX_Delta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SCT-GS-frW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="ars-ka-2Yh">
+                                <rect key="frame" x="28" y="828" width="358" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izz-82-T9I">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="4Yl-wt-3Fl"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="questionmark.circle" catalog="system" symbolScale="large" variableValue="0.0"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="EPg-Z6-1gM" kind="presentation" identifier="goMain2" modalPresentationStyle="fullScreen" id="50i-kA-Rdn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFt-i5-maE">
+                                        <rect key="frame" x="103" y="0.0" width="50" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="8sf-zG-bgV"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="house.lodge.circle" catalog="system" symbolScale="large" variableValue="1"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Zx7-dU-ahI" kind="presentation" identifier="goCampaigns2" modalPresentationStyle="fullScreen" id="phj-N7-nmW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPD-5A-POo">
+                                        <rect key="frame" x="206" y="0.0" width="50" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="qJi-EW-5AB"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="dollarsign.circle" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QT6-pR-iLT">
+                                        <rect key="frame" x="309" y="0.0" width="49" height="34"/>
+                                        <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system"/>
+                                        <connections>
+                                            <segue destination="T0x-pI-mqL" kind="presentation" identifier="myAccount2" modalPresentationStyle="fullScreen" id="P3c-2E-j3d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VOLUNTARIADO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-nq-NcK">
+                                <rect key="frame" x="144" y="438" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KCd-DS-Wi1">
+                                <rect key="frame" x="110" y="48" width="195" height="32"/>
+                                <segments>
+                                    <segment title="Voluntariado"/>
+                                    <segment title="Donaciones"/>
+                                </segments>
+                                <connections>
+                                    <segue destination="Gov-YK-GDb" kind="presentation" identifier="goDonations" modalPresentationStyle="fullScreen" id="mGS-3b-vch"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="28W-SA-mge"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ars-ka-2Yh" firstAttribute="bottom" secondItem="28W-SA-mge" secondAttribute="bottom" id="4u5-iZ-DnP"/>
+                            <constraint firstItem="AXy-nq-NcK" firstAttribute="centerX" secondItem="ars-ka-2Yh" secondAttribute="centerX" id="GR5-DL-8Ou"/>
+                            <constraint firstItem="KCd-DS-Wi1" firstAttribute="top" secondItem="28W-SA-mge" secondAttribute="top" id="JTY-pR-rCO"/>
+                            <constraint firstItem="AXy-nq-NcK" firstAttribute="centerY" secondItem="SCT-GS-frW" secondAttribute="centerY" id="MsL-km-rgT"/>
+                            <constraint firstItem="ars-ka-2Yh" firstAttribute="leading" secondItem="28W-SA-mge" secondAttribute="leading" constant="28" id="ZSG-F2-4FQ"/>
+                            <constraint firstItem="KCd-DS-Wi1" firstAttribute="leading" secondItem="28W-SA-mge" secondAttribute="leading" constant="110" id="diC-FW-RsF"/>
+                            <constraint firstItem="KCd-DS-Wi1" firstAttribute="centerX" secondItem="SCT-GS-frW" secondAttribute="centerX" id="i0g-js-Bjv"/>
+                            <constraint firstItem="AXy-nq-NcK" firstAttribute="leading" secondItem="28W-SA-mge" secondAttribute="leading" constant="144" id="v9e-go-UPK"/>
+                            <constraint firstItem="KCd-DS-Wi1" firstAttribute="centerX" secondItem="AXy-nq-NcK" secondAttribute="centerX" id="xyV-qS-PTd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXS-Lt-88P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4409" y="-354"/>
+        </scene>
+        <!--Donations View Controller-->
+        <scene sceneID="SB0-QL-0eu">
+            <objects>
+                <viewController id="Gov-YK-GDb" customClass="DonationsViewController" customModule="BAMX_Delta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EuM-PV-WUg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-8z-YIV">
+                                <rect key="frame" x="28" y="828" width="358" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG4-Au-JPF">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="ySh-Oy-Dzd"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="questionmark.circle" catalog="system" symbolScale="large" variableValue="0.0"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="EPg-Z6-1gM" kind="presentation" identifier="goMain3" modalPresentationStyle="fullScreen" id="dVx-aV-6Uf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYe-Or-MgH">
+                                        <rect key="frame" x="103" y="0.0" width="50" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="djP-2r-U1F"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="house.lodge.circle" catalog="system" symbolScale="large" variableValue="1"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Zx7-dU-ahI" kind="presentation" identifier="goCampaigns3" modalPresentationStyle="fullScreen" id="TSM-bO-iI4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-LO-f9L">
+                                        <rect key="frame" x="206" y="0.0" width="50" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Cw0-tC-Df5"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="dollarsign.circle" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTz-Vc-hae">
+                                        <rect key="frame" x="309" y="0.0" width="49" height="34"/>
+                                        <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system"/>
+                                        <connections>
+                                            <segue destination="T0x-pI-mqL" kind="presentation" identifier="myAccount3" modalPresentationStyle="fullScreen" id="j7n-S9-7Re"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DONACIONES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5je-aW-53O">
+                                <rect key="frame" x="153" y="438" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="ffP-hb-rxt">
+                                <rect key="frame" x="110" y="48" width="195" height="32"/>
+                                <segments>
+                                    <segment title="Voluntariado"/>
+                                    <segment title="Donaciones"/>
+                                </segments>
+                                <connections>
+                                    <segue destination="TkR-sG-iDR" kind="presentation" identifier="goVolunteer" modalPresentationStyle="fullScreen" id="Hr9-Qf-ldC"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cn0-NA-BD0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5je-aW-53O" firstAttribute="centerY" secondItem="EuM-PV-WUg" secondAttribute="centerY" id="GqB-eg-RMa"/>
+                            <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="EuM-PV-WUg" secondAttribute="centerX" id="K5O-dq-m1X"/>
+                            <constraint firstItem="ffP-hb-rxt" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="110" id="PVg-Qu-jxE"/>
+                            <constraint firstItem="pHf-8z-YIV" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="28" id="WMQ-vw-BRM"/>
+                            <constraint firstItem="5je-aW-53O" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="153" id="abF-EH-iSE"/>
+                            <constraint firstItem="ffP-hb-rxt" firstAttribute="top" secondItem="Cn0-NA-BD0" secondAttribute="top" id="ahR-cv-8Bm"/>
+                            <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="5je-aW-53O" secondAttribute="centerX" id="b5L-Th-mR6"/>
+                            <constraint firstItem="pHf-8z-YIV" firstAttribute="bottom" secondItem="Cn0-NA-BD0" secondAttribute="bottom" id="l5e-6D-eu3"/>
+                            <constraint firstItem="5je-aW-53O" firstAttribute="centerX" secondItem="pHf-8z-YIV" secondAttribute="centerX" id="s6d-Py-4lK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4h-fb-QBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5451" y="-354"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cBu-Sb-FOe"/>
-        <segue reference="YRq-xv-7T3"/>
-        <segue reference="Qfi-8H-NNx"/>
+        <segue reference="Hr9-Qf-ldC"/>
+        <segue reference="mGS-3b-vch"/>
+        <segue reference="TSM-bO-iI4"/>
+        <segue reference="j7n-S9-7Re"/>
+        <segue reference="dVx-aV-6Uf"/>
         <segue reference="Cji-LI-z94"/>
     </inferredMetricsTieBreakers>
     <resources>

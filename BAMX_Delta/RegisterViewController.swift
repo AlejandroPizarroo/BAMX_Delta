@@ -102,6 +102,23 @@ class RegisterViewController: UIViewController {
                         self.displayAlertMessage(message: message)
                     }
                     
+                    ref.child(key).setValue(object){
+                        (error: Error?, ref:DatabaseReference) in
+                        
+                        var message = ""
+                        
+                        if let error = error {
+                            message = "Ha ocurrido un error"
+                            print(error)
+                        }
+                        else{
+                            message = "El usuario se creó exitosamente!"
+                        }
+                        self.displayAlertMessageBlank(message: message)
+                    }
+                    
+                    
+                    
                 }else{
                     self.displayAlertMessage(message: "La contraseña debe incluir al menos una letra mayúscula, una minúscula, un dígito, un carácter especial y longitud mínima de 8 caracteres")
                 }
@@ -110,22 +127,9 @@ class RegisterViewController: UIViewController {
                 self.displayAlertMessage(message: "El email es incorrecto!")
             }
             
-        }
+            
+            
 
-        
-        ref.child(key).setValue(object){
-            (error: Error?, ref:DatabaseReference) in
-            
-            var message = ""
-            
-            if let error = error {
-                message = "Ha ocurrido un error"
-                print(error)
-            }
-            else{
-                message = "El usuario se creó exitosamente!"
-            }
-            self.displayAlertMessageBlank(message: message)
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
