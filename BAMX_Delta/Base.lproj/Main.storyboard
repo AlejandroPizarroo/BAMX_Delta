@@ -627,17 +627,14 @@
             <objects>
                 <viewController id="Zx7-dU-ahI" customClass="CampaignsViewController" customModule="BAMX_Delta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jct-J8-DPd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="yin-p2-TJh">
-                                <rect key="frame" x="27.5" y="828" width="359" height="34"/>
+                                <rect key="frame" x="27" y="1332" width="359" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK8-ZI-oGQ">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="qbx-hd-JXj"/>
-                                        </constraints>
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
@@ -650,9 +647,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1N-1c-aRO">
                                         <rect key="frame" x="103" y="0.0" width="50" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="iJc-Nu-0ZV"/>
-                                        </constraints>
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
@@ -661,9 +655,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAd-wq-ZCK">
                                         <rect key="frame" x="206" y="0.0" width="50" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="qAS-jA-69X"/>
-                                        </constraints>
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="dollarsign.circle" catalog="system"/>
@@ -682,28 +673,250 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CAMPAÑAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyD-Mh-5HV">
-                                <rect key="frame" x="161" y="438" width="92" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKN-FX-neh">
+                                <rect key="frame" x="0.0" y="48" width="413" height="1276"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ys4-97-Z2F" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="405" height="1300"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="njJ-6P-CIm">
+                                                <rect key="frame" x="81" y="0.0" width="252" height="108"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="108" id="y7T-jI-Lke"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROGRAMAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-mT-kSB">
+                                                <rect key="frame" x="20" y="116" width="191" height="47"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="38"/>
+                                                <color key="textColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtI-kR-nJq">
+                                                <rect key="frame" x="20" y="282" width="372" height="97"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="97" id="unX-6D-fwZ"/>
+                                                </constraints>
+                                                <string key="text">Es un programa que inició en el 2004, en donde se busca apoyar a las familias en situación vulnerable a solventar la cuota de recuperación de su despensa por medio de un padrino, el cual realiza su donativo para que llegue a la familia apadrinada dos despensas al mes.</string>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                                <color key="textColor" white="0.13303774879092262" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWd-CA-jbs">
+                                                <rect key="frame" x="22" y="551" width="369" height="109"/>
+                                                <string key="text">Es una colecta anual que tuvo orgien en el año 2015, en la cual se rescatan alimentos no perecederos y productis enlatados. Se celebra en el mes de ocubre y participan todos los Bancos de Alimentos de la Red BAMX con la alianza de la SEMAR, SEDENA, Corporativos, escuelas y sociedad organizada. </string>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                                <color key="textColor" white="0.13303774879999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alimenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbN-6Y-kGK">
+                                                <rect key="frame" x="22" y="503" width="91" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="91" id="I2a-yB-m0T"/>
+                                                    <constraint firstAttribute="height" constant="19" id="a6A-5r-Pi9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
+                                                <color key="textColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHx-x1-ezj">
+                                                <rect key="frame" x="148.5" y="386.5" width="116.5" height="31"/>
+                                                <color key="backgroundColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="AM3-ip-pL8"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="DONA AHORA">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySb-Or-ko0">
+                                                <rect key="frame" x="106" y="668" width="201" height="30"/>
+                                                <color key="backgroundColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="pgk-Fy-cxP"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="APLICAR PARA VOLUNTARIO">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uniendomanos" translatesAutoresizingMaskIntoConstraints="NO" id="B78-Lg-tTe">
+                                                <rect key="frame" x="20" y="202" width="140" height="79"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alimenta" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-kQ-O9D">
+                                                <rect key="frame" x="254" y="473" width="137" height="79"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bet-h0-9NB">
+                                                <rect key="frame" x="23" y="1098" width="369" height="105"/>
+                                                <string key="text">Programa en el cual, desde el 2014 se rescatan excedentes de alimentos cocinados 100% aptos para el consumo humano de hoteles, restaurantes y establecimientos por medio de una aplicación móvil. Con ello, beneficiamos la alimentación de nuestra población en situación vulnerable.</string>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                                <color key="textColor" white="0.13303774879999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al rescate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ea-qr-Nno">
+                                                <rect key="frame" x="24" y="1049" width="104" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="b2A-IA-BFe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
+                                                <color key="textColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alrescate" translatesAutoresizingMaskIntoConstraints="NO" id="VSF-Jy-H4S">
+                                                <rect key="frame" x="255" y="1019" width="137" height="79"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTa-9y-0vd">
+                                                <rect key="frame" x="97" y="1209.5" width="200.5" height="30"/>
+                                                <color key="backgroundColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="OTf-Oh-vhf"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="APLICAR PARA VOLUNTARIO">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uniendo Manos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2m-wT-TVi">
+                                                <rect key="frame" x="226" y="232" width="159" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="R02-R1-sj2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
+                                                <color key="textColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mg-Fg-HKs">
+                                                <rect key="frame" x="22" y="842" width="369" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="9cP-4K-m0y"/>
+                                                </constraints>
+                                                <string key="text">Es una estrategia en educación en alimentación, implementada por la red BAMX en dónde se promueve la adecuada selección, preparación y utilización de alimentos locales, así como el gusto y disfrute de los alimentos en convivencia de la familia. </string>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                                <color key="textColor" white="0.13303774879999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comer en familia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK3-ZG-RHe">
+                                                <rect key="frame" x="215" y="785" width="174" height="19"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="19" id="ai7-kb-JcR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="19"/>
+                                                <color key="textColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comerfamilia" translatesAutoresizingMaskIntoConstraints="NO" id="Swb-OM-La4">
+                                                <rect key="frame" x="22" y="755" width="137" height="79"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="137" id="YQ4-wr-bHI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh8-2v-2ij">
+                                                <rect key="frame" x="145" y="941.5" width="116.5" height="31"/>
+                                                <color key="backgroundColor" red="0.80392156859999997" green="0.062745098040000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="DONA AHORA">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="VSF-Jy-H4S" secondAttribute="trailing" constant="13" id="1Cv-ft-5eN"/>
+                                            <constraint firstItem="dhz-kQ-O9D" firstAttribute="leading" secondItem="VSF-Jy-H4S" secondAttribute="leading" constant="-1" id="1wG-PE-IXc"/>
+                                            <constraint firstAttribute="trailing" secondItem="dhz-kQ-O9D" secondAttribute="trailing" constant="14" id="23A-eg-Zf9"/>
+                                            <constraint firstItem="ySb-Or-ko0" firstAttribute="top" secondItem="SWd-CA-jbs" secondAttribute="bottom" constant="8" symbolic="YES" id="2np-rf-HLV"/>
+                                            <constraint firstItem="9Ea-qr-Nno" firstAttribute="centerY" secondItem="VSF-Jy-H4S" secondAttribute="centerY" id="6YR-GX-Lda"/>
+                                            <constraint firstItem="MtI-kR-nJq" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="20" symbolic="YES" id="6gV-Hm-1hJ"/>
+                                            <constraint firstItem="SWd-CA-jbs" firstAttribute="top" secondItem="qbN-6Y-kGK" secondAttribute="bottom" constant="29" id="74s-d6-htK"/>
+                                            <constraint firstAttribute="width" constant="405" id="79U-Gv-jR8"/>
+                                            <constraint firstAttribute="trailing" secondItem="njJ-6P-CIm" secondAttribute="trailing" constant="72" id="7xX-Q2-XRR"/>
+                                            <constraint firstItem="hTa-9y-0vd" firstAttribute="top" secondItem="bet-h0-9NB" secondAttribute="bottom" constant="6.5" id="9HO-Bv-qrk"/>
+                                            <constraint firstItem="B78-Lg-tTe" firstAttribute="trailing" secondItem="Swb-OM-La4" secondAttribute="trailing" constant="1" id="9WO-YS-nfO"/>
+                                            <constraint firstItem="B78-Lg-tTe" firstAttribute="top" secondItem="Gst-mT-kSB" secondAttribute="bottom" constant="39" id="9iz-vG-uQE"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gst-mT-kSB" secondAttribute="trailing" constant="194" id="ACP-xr-cxW"/>
+                                            <constraint firstItem="bet-h0-9NB" firstAttribute="top" secondItem="9Ea-qr-Nno" secondAttribute="bottom" constant="30" id="AZa-KV-rOY"/>
+                                            <constraint firstItem="3mg-Fg-HKs" firstAttribute="top" secondItem="Swb-OM-La4" secondAttribute="bottom" constant="8" symbolic="YES" id="Bxp-7f-1IO"/>
+                                            <constraint firstAttribute="trailing" secondItem="H2m-wT-TVi" secondAttribute="trailing" constant="20" symbolic="YES" id="CKL-t6-SJM"/>
+                                            <constraint firstItem="H2m-wT-TVi" firstAttribute="top" secondItem="njJ-6P-CIm" secondAttribute="bottom" constant="124" id="CKw-ZM-RdW"/>
+                                            <constraint firstItem="qbN-6Y-kGK" firstAttribute="top" secondItem="MtI-kR-nJq" secondAttribute="bottom" constant="124" id="Db7-W4-dre"/>
+                                            <constraint firstItem="H2m-wT-TVi" firstAttribute="leading" secondItem="B78-Lg-tTe" secondAttribute="trailing" constant="66" id="EYi-s6-y1F"/>
+                                            <constraint firstItem="Oh8-2v-2ij" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="145" id="EzA-WX-LdM"/>
+                                            <constraint firstItem="MtI-kR-nJq" firstAttribute="top" secondItem="H2m-wT-TVi" secondAttribute="bottom" constant="31" id="HDB-jX-bMb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oh8-2v-2ij" secondAttribute="trailing" constant="143.5" id="Hkn-pm-Icy"/>
+                                            <constraint firstItem="ySb-Or-ko0" firstAttribute="top" secondItem="dhz-kQ-O9D" secondAttribute="bottom" constant="116" id="IBv-xe-UUh"/>
+                                            <constraint firstItem="MtI-kR-nJq" firstAttribute="top" secondItem="B78-Lg-tTe" secondAttribute="bottom" constant="1" id="IeG-S1-m4Q"/>
+                                            <constraint firstItem="dhz-kQ-O9D" firstAttribute="leading" secondItem="qbN-6Y-kGK" secondAttribute="trailing" constant="141" id="JsP-8A-qZA"/>
+                                            <constraint firstItem="MtI-kR-nJq" firstAttribute="top" secondItem="B78-Lg-tTe" secondAttribute="bottom" constant="1" id="Ksp-QH-vRB"/>
+                                            <constraint firstItem="njJ-6P-CIm" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="81" id="MU1-gX-DDv"/>
+                                            <constraint firstItem="3mg-Fg-HKs" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="22" id="Ms9-Xz-sqY"/>
+                                            <constraint firstItem="KK3-ZG-RHe" firstAttribute="top" secondItem="ySb-Or-ko0" secondAttribute="bottom" constant="87" id="N9E-Ek-QHc"/>
+                                            <constraint firstItem="ySb-Or-ko0" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="106" id="PL5-kJ-km1"/>
+                                            <constraint firstItem="KK3-ZG-RHe" firstAttribute="leading" secondItem="Swb-OM-La4" secondAttribute="trailing" constant="56" id="QBX-Ds-BJS"/>
+                                            <constraint firstItem="njJ-6P-CIm" firstAttribute="top" secondItem="Ys4-97-Z2F" secondAttribute="top" id="Qzh-Hu-2mY"/>
+                                            <constraint firstAttribute="trailing" secondItem="ySb-Or-ko0" secondAttribute="trailing" constant="98" id="RqM-cb-1HG"/>
+                                            <constraint firstItem="bet-h0-9NB" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="23" id="SJ0-a6-lsM"/>
+                                            <constraint firstItem="VSF-Jy-H4S" firstAttribute="top" secondItem="Oh8-2v-2ij" secondAttribute="bottom" constant="46.5" id="T8M-hR-B0c"/>
+                                            <constraint firstAttribute="trailing" secondItem="SWd-CA-jbs" secondAttribute="trailing" constant="14" id="Tmd-0J-tl4"/>
+                                            <constraint firstItem="qbN-6Y-kGK" firstAttribute="centerY" secondItem="dhz-kQ-O9D" secondAttribute="centerY" id="UIV-IW-7tc"/>
+                                            <constraint firstItem="dhz-kQ-O9D" firstAttribute="top" secondItem="FHx-x1-ezj" secondAttribute="bottom" constant="55.5" id="WBU-I1-fmk"/>
+                                            <constraint firstAttribute="trailing" secondItem="FHx-x1-ezj" secondAttribute="trailing" constant="140" id="XDB-75-iSx"/>
+                                            <constraint firstItem="Gst-mT-kSB" firstAttribute="top" secondItem="njJ-6P-CIm" secondAttribute="bottom" constant="8" symbolic="YES" id="Ytf-hz-Bdd"/>
+                                            <constraint firstAttribute="trailing" secondItem="MtI-kR-nJq" secondAttribute="trailing" constant="13" id="Yux-jv-AVb"/>
+                                            <constraint firstItem="hTa-9y-0vd" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="97" id="ZjQ-bu-Hd0"/>
+                                            <constraint firstItem="Swb-OM-La4" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="22" id="c1h-2B-PJH"/>
+                                            <constraint firstItem="FHx-x1-ezj" firstAttribute="top" secondItem="MtI-kR-nJq" secondAttribute="bottom" constant="7.5" id="ePA-3e-m7Z"/>
+                                            <constraint firstAttribute="height" constant="1300" id="g8J-9x-THI"/>
+                                            <constraint firstItem="B78-Lg-tTe" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="20" symbolic="YES" id="gD0-JH-rOQ"/>
+                                            <constraint firstItem="SWd-CA-jbs" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="22" id="gq1-E7-Iig"/>
+                                            <constraint firstItem="9Ea-qr-Nno" firstAttribute="top" secondItem="3mg-Fg-HKs" secondAttribute="bottom" constant="115" id="jFj-Vy-oOB"/>
+                                            <constraint firstItem="3mg-Fg-HKs" firstAttribute="top" secondItem="KK3-ZG-RHe" secondAttribute="bottom" constant="38" id="jaz-vx-HdJ"/>
+                                            <constraint firstItem="B78-Lg-tTe" firstAttribute="top" secondItem="Gst-mT-kSB" secondAttribute="bottom" constant="39" id="kkG-i8-KH4"/>
+                                            <constraint firstItem="VSF-Jy-H4S" firstAttribute="leading" secondItem="9Ea-qr-Nno" secondAttribute="trailing" constant="127" id="lGF-KM-Ahu"/>
+                                            <constraint firstItem="Gst-mT-kSB" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="20" symbolic="YES" id="m7a-4c-BRd"/>
+                                            <constraint firstItem="H2m-wT-TVi" firstAttribute="leading" secondItem="B78-Lg-tTe" secondAttribute="trailing" constant="66" id="mBB-G4-8ni"/>
+                                            <constraint firstAttribute="trailing" secondItem="hTa-9y-0vd" secondAttribute="trailing" constant="107.5" id="nis-Uh-551"/>
+                                            <constraint firstAttribute="trailing" secondItem="KK3-ZG-RHe" secondAttribute="trailing" constant="16" id="oNM-mf-f79"/>
+                                            <constraint firstItem="Swb-OM-La4" firstAttribute="top" secondItem="ySb-Or-ko0" secondAttribute="bottom" constant="57" id="oY5-D1-5ih"/>
+                                            <constraint firstItem="FHx-x1-ezj" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="148.5" id="qGs-25-jOo"/>
+                                            <constraint firstItem="B78-Lg-tTe" firstAttribute="centerY" secondItem="H2m-wT-TVi" secondAttribute="centerY" id="qPL-UH-zaG"/>
+                                            <constraint firstItem="Oh8-2v-2ij" firstAttribute="top" secondItem="3mg-Fg-HKs" secondAttribute="bottom" constant="7.5" id="tme-BJ-vWW"/>
+                                            <constraint firstItem="bet-h0-9NB" firstAttribute="top" secondItem="VSF-Jy-H4S" secondAttribute="bottom" id="wJW-yg-fxi"/>
+                                            <constraint firstItem="9Ea-qr-Nno" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="24" id="wf5-8a-AHs"/>
+                                            <constraint firstItem="qbN-6Y-kGK" firstAttribute="leading" secondItem="Ys4-97-Z2F" secondAttribute="leading" constant="22" id="xfW-n3-CWf"/>
+                                            <constraint firstAttribute="trailing" secondItem="bet-h0-9NB" secondAttribute="trailing" constant="13" id="xkb-Ra-nco"/>
+                                            <constraint firstAttribute="trailing" secondItem="3mg-Fg-HKs" secondAttribute="trailing" constant="14" id="yJZ-nE-KGB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ys4-97-Z2F" secondAttribute="bottom" id="Kdj-Lg-WlM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ys4-97-Z2F" secondAttribute="trailing" constant="8" id="Qm3-oT-0uR"/>
+                                    <constraint firstItem="Ys4-97-Z2F" firstAttribute="top" secondItem="mKN-FX-neh" secondAttribute="top" id="fnD-CP-ycq"/>
+                                    <constraint firstItem="Ys4-97-Z2F" firstAttribute="leading" secondItem="mKN-FX-neh" secondAttribute="leading" id="pOr-Wv-O25"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RTW-Zw-SMW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="LyD-Mh-5HV" firstAttribute="top" secondItem="RTW-Zw-SMW" secondAttribute="top" constant="390" id="JtM-YX-M0f"/>
-                            <constraint firstItem="yin-p2-TJh" firstAttribute="bottom" secondItem="RTW-Zw-SMW" secondAttribute="bottom" id="OSp-6h-9EN"/>
-                            <constraint firstItem="LyD-Mh-5HV" firstAttribute="centerX" secondItem="yin-p2-TJh" secondAttribute="centerX" id="e5Z-pi-g8X"/>
-                            <constraint firstItem="LyD-Mh-5HV" firstAttribute="centerY" secondItem="Jct-J8-DPd" secondAttribute="centerY" id="fxd-I6-Xiz"/>
-                            <constraint firstItem="LyD-Mh-5HV" firstAttribute="centerX" secondItem="Jct-J8-DPd" secondAttribute="centerX" id="uXG-5u-LVK"/>
+                            <constraint firstItem="mKN-FX-neh" firstAttribute="leading" secondItem="RTW-Zw-SMW" secondAttribute="leading" id="3Yp-fG-GI1"/>
+                            <constraint firstItem="mKN-FX-neh" firstAttribute="trailing" secondItem="RTW-Zw-SMW" secondAttribute="trailing" id="Q5E-DZ-Jcy"/>
+                            <constraint firstItem="mKN-FX-neh" firstAttribute="centerX" secondItem="yin-p2-TJh" secondAttribute="centerX" id="Yqg-n2-kt9"/>
+                            <constraint firstItem="mKN-FX-neh" firstAttribute="top" secondItem="RTW-Zw-SMW" secondAttribute="top" id="a1Y-Sv-ddM"/>
+                            <constraint firstItem="yin-p2-TJh" firstAttribute="top" secondItem="mKN-FX-neh" secondAttribute="bottom" constant="8" symbolic="YES" id="nPr-sa-Phc"/>
+                            <constraint firstItem="yin-p2-TJh" firstAttribute="bottom" secondItem="RTW-Zw-SMW" secondAttribute="bottom" id="sOQ-1y-GdG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fkg-hI-3Mx"/>
+                    <size key="freeformSize" width="413" height="1400"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5t2-qd-sT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3276.811594202899" y="-354.24107142857139"/>
+            <point key="canvasLocation" x="3276.0869565217395" y="-354.24107142857139"/>
         </scene>
         <!--Volunteer View Controller-->
         <scene sceneID="XDo-D0-iap">
@@ -809,7 +1022,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-8z-YIV">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-8z-YIV">
                                 <rect key="frame" x="28" y="828" width="358" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG4-Au-JPF">
@@ -899,14 +1112,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hr9-Qf-ldC"/>
-        <segue reference="mGS-3b-vch"/>
-        <segue reference="TSM-bO-iI4"/>
-        <segue reference="j7n-S9-7Re"/>
-        <segue reference="dVx-aV-6Uf"/>
+        <segue reference="g4G-5P-1Sq"/>
+        <segue reference="nEe-N2-kW8"/>
+        <segue reference="YRq-xv-7T3"/>
+        <segue reference="Lzb-wM-eo1"/>
         <segue reference="Cji-LI-z94"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="alimenta" width="200" height="132"/>
+        <image name="alrescate" width="200" height="132"/>
+        <image name="comerfamilia" width="200" height="132"/>
         <image name="divider" width="512" height="512"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="123"/>
         <image name="house.lodge.circle" catalog="system" width="128" height="123"/>
@@ -915,6 +1130,7 @@
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="questionmark.circle" catalog="system" width="128" height="123"/>
         <image name="target" catalog="system" width="128" height="123"/>
+        <image name="uniendomanos" width="200" height="132"/>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
