@@ -741,6 +741,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="APLICAR PARA VOLUNTARIO">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="volunteerAlimenta:" destination="5mT-XM-g3J" eventType="touchUpInside" id="0bp-9b-jUt"/>
+                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uniendomanos" translatesAutoresizingMaskIntoConstraints="NO" id="B78-Lg-tTe">
                                                 <rect key="frame" x="20" y="202" width="140" height="79"/>
@@ -778,6 +781,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="APLICAR PARA VOLUNTARIO">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="volunteerAlRescate:" destination="5mT-XM-g3J" eventType="touchUpInside" id="xmi-KF-0YS"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uniendo Manos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2m-wT-TVi">
                                                 <rect key="frame" x="226" y="232" width="159" height="19"/>
@@ -821,6 +827,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="DONA AHORA">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="donateComerEnFamilia:" destination="5mT-XM-g3J" eventType="touchUpInside" id="5dD-02-qjy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -913,8 +922,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fkg-hI-3Mx"/>
                     <size key="freeformSize" width="413" height="1400"/>
+                    <connections>
+                        <outlet property="donateComerEnFamilia" destination="Oh8-2v-2ij" id="Shu-Zk-6kp"/>
+                        <outlet property="donateUniendoManos" destination="FHx-x1-ezj" id="FVu-j4-9Wu"/>
+                        <outlet property="volunteerAlRescate" destination="hTa-9y-0vd" id="i7M-Ps-hQv"/>
+                        <outlet property="volunteerAlimenta" destination="ySb-Or-ko0" id="KZB-Hv-DNF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5t2-qd-sT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5mT-XM-g3J" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3276.0869565217395" y="-354.24107142857139"/>
         </scene>
