@@ -79,7 +79,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3qG-yC-y9w"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GMA-fF-bRs" firstAttribute="centerY" secondItem="wu5-Ef-2JA" secondAttribute="centerY" id="04e-dd-TUw"/>
                             <constraint firstItem="Iox-HC-YQL" firstAttribute="leading" secondItem="3qG-yC-y9w" secondAttribute="leading" constant="99" id="4da-0u-kDy"/>
@@ -1090,12 +1090,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DONACIONES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5je-aW-53O">
-                                <rect key="frame" x="153" y="438" width="109" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="ffP-hb-rxt">
                                 <rect key="frame" x="110" y="48" width="195" height="32"/>
                                 <segments>
@@ -1106,19 +1100,26 @@
                                     <segue destination="TkR-sG-iDR" kind="presentation" identifier="goVolunteer" modalPresentationStyle="fullScreen" id="Hr9-Qf-ldC"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-Iz-Scw">
+                                <rect key="frame" x="139" y="431" width="136" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Make Payment"/>
+                                <connections>
+                                    <action selector="paypalPaymentProcess:" destination="Gov-YK-GDb" eventType="touchUpInside" id="afL-Sr-g6f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cn0-NA-BD0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5je-aW-53O" firstAttribute="centerY" secondItem="EuM-PV-WUg" secondAttribute="centerY" id="GqB-eg-RMa"/>
+                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="centerX" secondItem="pHf-8z-YIV" secondAttribute="centerX" id="2YD-gM-O4N"/>
                             <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="EuM-PV-WUg" secondAttribute="centerX" id="K5O-dq-m1X"/>
                             <constraint firstItem="ffP-hb-rxt" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="110" id="PVg-Qu-jxE"/>
                             <constraint firstItem="pHf-8z-YIV" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="28" id="WMQ-vw-BRM"/>
-                            <constraint firstItem="5je-aW-53O" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="153" id="abF-EH-iSE"/>
                             <constraint firstItem="ffP-hb-rxt" firstAttribute="top" secondItem="Cn0-NA-BD0" secondAttribute="top" id="ahR-cv-8Bm"/>
-                            <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="5je-aW-53O" secondAttribute="centerX" id="b5L-Th-mR6"/>
                             <constraint firstItem="pHf-8z-YIV" firstAttribute="bottom" secondItem="Cn0-NA-BD0" secondAttribute="bottom" id="l5e-6D-eu3"/>
-                            <constraint firstItem="5je-aW-53O" firstAttribute="centerX" secondItem="pHf-8z-YIV" secondAttribute="centerX" id="s6d-Py-4lK"/>
+                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="centerY" secondItem="EuM-PV-WUg" secondAttribute="centerY" id="tJL-eh-j7M"/>
+                            <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="XU6-Iz-Scw" secondAttribute="centerX" id="vpk-uF-hAG"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1129,9 +1130,9 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="g4G-5P-1Sq"/>
-        <segue reference="nEe-N2-kW8"/>
-        <segue reference="YRq-xv-7T3"/>
-        <segue reference="Lzb-wM-eo1"/>
+        <segue reference="TSM-bO-iI4"/>
+        <segue reference="j7n-S9-7Re"/>
+        <segue reference="Y5U-JY-NQ6"/>
         <segue reference="Cji-LI-z94"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F82BCF25C07EF7C52C0F7D7 /* Pods_BAMX_DeltaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C481E1BED35D0A51278419CE /* Pods_BAMX_DeltaTests.framework */; };
-		82FB939726DBD47B9DBBE946 /* Pods_BAMX_Delta_BAMX_DeltaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B940C438BC312C9DB6A9D061 /* Pods_BAMX_Delta_BAMX_DeltaUITests.framework */; };
 		F216911B2919E20500D42474 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F216911A2919E20500D42474 /* FirebaseAuthManager.swift */; };
 		F2171DB328FB655A002ADAB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2171DB228FB655A002ADAB7 /* LoginViewController.swift */; };
 		F2171DBC28FB6E15002ADAB7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */; };
@@ -53,15 +51,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10974F3C14007FC94FF3FA92 /* Pods-BAMX_DeltaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMX_DeltaTests.release.xcconfig"; path = "Target Support Files/Pods-BAMX_DeltaTests/Pods-BAMX_DeltaTests.release.xcconfig"; sourceTree = "<group>"; };
-		2FBAD79282CE80454B411624 /* Pods-BAMX_Delta-BAMX_DeltaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMX_Delta-BAMX_DeltaUITests.release.xcconfig"; path = "Target Support Files/Pods-BAMX_Delta-BAMX_DeltaUITests/Pods-BAMX_Delta-BAMX_DeltaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4347FE19018E97C0AE1CC075 /* Pods-BAMX_Delta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMX_Delta.release.xcconfig"; path = "Target Support Files/Pods-BAMX_Delta/Pods-BAMX_Delta.release.xcconfig"; sourceTree = "<group>"; };
-		5D8A1B13E10B67FFB11C5880 /* Pods-BAMX_Delta-BAMX_DeltaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMX_Delta-BAMX_DeltaUITests.debug.xcconfig"; path = "Target Support Files/Pods-BAMX_Delta-BAMX_DeltaUITests/Pods-BAMX_Delta-BAMX_DeltaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B940C438BC312C9DB6A9D061 /* Pods_BAMX_Delta_BAMX_DeltaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMX_Delta_BAMX_DeltaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE01436F7253D73023EB8CB4 /* Pods-BAMX_DeltaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMX_DeltaTests.debug.xcconfig"; path = "Target Support Files/Pods-BAMX_DeltaTests/Pods-BAMX_DeltaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C481E1BED35D0A51278419CE /* Pods_BAMX_DeltaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMX_DeltaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C700AE12AAC9D2E0C8BA0085 /* Pods_BAMX_Delta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAMX_Delta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA6287FA6435AA790BB5269 /* Pods-BAMX_Delta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAMX_Delta.debug.xcconfig"; path = "Target Support Files/Pods-BAMX_Delta/Pods-BAMX_Delta.debug.xcconfig"; sourceTree = "<group>"; };
+		F205F3C82932EC02002FF758 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F205F3CA2932EC0E002FF758 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F205F3CC2932EC1A002FF758 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F205F3CE2932EC2A002FF758 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F205F3D02932EC36002FF758 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F205F3D22932EC4B002FF758 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F205F3D42932EC55002FF758 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F205F3D62932EC65002FF758 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		F205F3D82932EC72002FF758 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F216911A2919E20500D42474 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		F2171DB228FB655A002ADAB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F2171DBB28FB6E15002ADAB7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F82BCF25C07EF7C52C0F7D7 /* Pods_BAMX_DeltaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82FB939726DBD47B9DBBE946 /* Pods_BAMX_Delta_BAMX_DeltaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,9 +119,16 @@
 		91F5DAE90ECE2CDAD1383525 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F205F3D82932EC72002FF758 /* SystemConfiguration.framework */,
+				F205F3D62932EC65002FF758 /* SafariServices.framework */,
+				F205F3D42932EC55002FF758 /* MobileCoreServices.framework */,
+				F205F3D22932EC4B002FF758 /* MessageUI.framework */,
+				F205F3D02932EC36002FF758 /* CoreMedia.framework */,
+				F205F3CE2932EC2A002FF758 /* CoreLocation.framework */,
+				F205F3CC2932EC1A002FF758 /* AVFoundation.framework */,
+				F205F3CA2932EC0E002FF758 /* AudioToolbox.framework */,
+				F205F3C82932EC02002FF758 /* Accelerate.framework */,
 				C700AE12AAC9D2E0C8BA0085 /* Pods_BAMX_Delta.framework */,
-				B940C438BC312C9DB6A9D061 /* Pods_BAMX_Delta_BAMX_DeltaUITests.framework */,
-				C481E1BED35D0A51278419CE /* Pods_BAMX_DeltaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,10 +138,6 @@
 			children = (
 				ECA6287FA6435AA790BB5269 /* Pods-BAMX_Delta.debug.xcconfig */,
 				4347FE19018E97C0AE1CC075 /* Pods-BAMX_Delta.release.xcconfig */,
-				5D8A1B13E10B67FFB11C5880 /* Pods-BAMX_Delta-BAMX_DeltaUITests.debug.xcconfig */,
-				2FBAD79282CE80454B411624 /* Pods-BAMX_Delta-BAMX_DeltaUITests.release.xcconfig */,
-				BE01436F7253D73023EB8CB4 /* Pods-BAMX_DeltaTests.debug.xcconfig */,
-				10974F3C14007FC94FF3FA92 /* Pods-BAMX_DeltaTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -233,7 +235,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F266667A28F76A7A005C192C /* Build configuration list for PBXNativeTarget "BAMX_DeltaTests" */;
 			buildPhases = (
-				8F86A90D60F087A4C753B523 /* [CP] Check Pods Manifest.lock */,
 				F266665F28F76A79005C192C /* Sources */,
 				F266666028F76A79005C192C /* Frameworks */,
 				F266666128F76A79005C192C /* Resources */,
@@ -252,11 +253,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F266667D28F76A7A005C192C /* Build configuration list for PBXNativeTarget "BAMX_DeltaUITests" */;
 			buildPhases = (
-				3512CFB250B34068CF553C3C /* [CP] Check Pods Manifest.lock */,
 				F266666928F76A7A005C192C /* Sources */,
 				F266666A28F76A7A005C192C /* Frameworks */,
 				F266666B28F76A7A005C192C /* Resources */,
-				37A74212387BFB3232B92979 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -360,67 +359,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BAMX_Delta/Pods-BAMX_Delta-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3512CFB250B34068CF553C3C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BAMX_Delta-BAMX_DeltaUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		37A74212387BFB3232B92979 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BAMX_Delta-BAMX_DeltaUITests/Pods-BAMX_Delta-BAMX_DeltaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BAMX_Delta-BAMX_DeltaUITests/Pods-BAMX_Delta-BAMX_DeltaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BAMX_Delta-BAMX_DeltaUITests/Pods-BAMX_Delta-BAMX_DeltaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F86A90D60F087A4C753B523 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BAMX_DeltaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		91FDDE888C3D854860E9AC3A /* [CP] Check Pods Manifest.lock */ = {
@@ -652,7 +590,18 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BAMX_Delta/PayPalMobile",
+					"$(PROJECT_DIR)/BAMX_Delta/PayPalMobile/CardIO",
+					"$(PROJECT_DIR)/BAMX_Delta/CardIO",
+				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"youtube_ios_player_helper\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.itesm.BAMX-Delta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -680,7 +629,18 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BAMX_Delta/PayPalMobile",
+					"$(PROJECT_DIR)/BAMX_Delta/PayPalMobile/CardIO",
+					"$(PROJECT_DIR)/BAMX_Delta/CardIO",
+				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"youtube_ios_player_helper\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.itesm.BAMX-Delta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -691,7 +651,6 @@
 		};
 		F266667B28F76A7A005C192C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE01436F7253D73023EB8CB4 /* Pods-BAMX_DeltaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -711,7 +670,6 @@
 		};
 		F266667C28F76A7A005C192C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10974F3C14007FC94FF3FA92 /* Pods-BAMX_DeltaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -731,7 +689,6 @@
 		};
 		F266667E28F76A7A005C192C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D8A1B13E10B67FFB11C5880 /* Pods-BAMX_Delta-BAMX_DeltaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -749,7 +706,6 @@
 		};
 		F266667F28F76A7A005C192C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FBAD79282CE80454B411624 /* Pods-BAMX_Delta-BAMX_DeltaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
