@@ -1,0 +1,30 @@
+PODS:
+  - Braintree (5.16.0):
+    - Braintree/Card (= 5.16.0)
+    - Braintree/Core (= 5.16.0)
+    - Braintree/PayPal (= 5.16.0)
+  - Braintree/Card (5.16.0):
+    - Braintree/Core
+  - Braintree/Core (5.16.0)
+  - Braintree/PayPal (5.16.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+  - Braintree/PayPalDataCollector (5.16.0)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - Braintree
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Braintree
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Braintree: 944176b3ddb7c7c35f2969ce0a60262169baabe9
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: 4af4877f8d9bb091e78554d6f429806d2c1488ac
+
+COCOAPODS: 1.11.3
