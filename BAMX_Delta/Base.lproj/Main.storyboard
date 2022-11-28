@@ -1299,10 +1299,16 @@
                                     <segue destination="TkR-sG-iDR" kind="presentation" identifier="goVolunteer" modalPresentationStyle="fullScreen" id="Hr9-Qf-ldC"/>
                                 </connections>
                             </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MetodoPagoOffline" translatesAutoresizingMaskIntoConstraints="NO" id="NDr-N3-pEO">
+                                <rect key="frame" x="47" y="252" width="321" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="Y5M-Z0-6ux"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-Iz-Scw">
-                                <rect key="frame" x="139" y="431" width="136" height="34.5"/>
+                                <rect key="frame" x="113" y="537" width="189" height="34.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Make Payment"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Make Online Payment"/>
                                 <connections>
                                     <action selector="paypalPaymentProcess:" destination="Gov-YK-GDb" eventType="touchUpInside" id="afL-Sr-g6f"/>
                                 </connections>
@@ -1312,30 +1318,34 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XU6-Iz-Scw" firstAttribute="centerX" secondItem="pHf-8z-YIV" secondAttribute="centerX" id="2YD-gM-O4N"/>
+                            <constraint firstItem="NDr-N3-pEO" firstAttribute="top" secondItem="EuM-PV-WUg" secondAttribute="top" constant="252" id="BVt-fI-ZR5"/>
                             <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="EuM-PV-WUg" secondAttribute="centerX" id="K5O-dq-m1X"/>
                             <constraint firstItem="ffP-hb-rxt" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="110" id="PVg-Qu-jxE"/>
+                            <constraint firstItem="NDr-N3-pEO" firstAttribute="centerX" secondItem="XU6-Iz-Scw" secondAttribute="centerX" id="Qq8-Gz-Gk2"/>
+                            <constraint firstItem="NDr-N3-pEO" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="47" id="Tuy-n2-FQQ"/>
                             <constraint firstItem="pHf-8z-YIV" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="28" id="WMQ-vw-BRM"/>
                             <constraint firstItem="ffP-hb-rxt" firstAttribute="top" secondItem="Cn0-NA-BD0" secondAttribute="top" id="ahR-cv-8Bm"/>
                             <constraint firstItem="pHf-8z-YIV" firstAttribute="bottom" secondItem="Cn0-NA-BD0" secondAttribute="bottom" id="l5e-6D-eu3"/>
-                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="centerY" secondItem="EuM-PV-WUg" secondAttribute="centerY" id="tJL-eh-j7M"/>
+                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="centerY" secondItem="EuM-PV-WUg" secondAttribute="centerY" constant="106.25" id="tJL-eh-j7M"/>
                             <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="XU6-Iz-Scw" secondAttribute="centerX" id="vpk-uF-hAG"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4h-fb-QBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5451" y="-354"/>
+            <point key="canvasLocation" x="5450.7246376811599" y="-354.24107142857139"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Hr9-Qf-ldC"/>
         <segue reference="mGS-3b-vch"/>
-        <segue reference="phj-N7-nmW"/>
-        <segue reference="P3c-2E-j3d"/>
-        <segue reference="50i-kA-Rdn"/>
+        <segue reference="TSM-bO-iI4"/>
+        <segue reference="j7n-S9-7Re"/>
+        <segue reference="dVx-aV-6Uf"/>
         <segue reference="Cji-LI-z94"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="MetodoPagoOffline" width="355" height="245"/>
         <image name="alimenta" width="200" height="132"/>
         <image name="alrescate" width="200" height="132"/>
         <image name="comerfamilia" width="200" height="132"/>
