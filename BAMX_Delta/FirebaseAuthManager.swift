@@ -24,6 +24,7 @@ class FirebaseAuthManager{
         }
     }
     
+    
     func logIn(email:String, password: String, completionBlock: @escaping (_ success: Bool) -> Void){
         
         Auth.auth().signIn(withEmail: email, password: password){

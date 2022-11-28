@@ -30,6 +30,7 @@
 		F26A28CD292FC8A3005547D0 /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A28CC292FC8A3005547D0 /* DonationsViewController.swift */; };
 		F2E2048A29246ECE0043ED6E /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2048929246ECE0043ED6E /* MyAccountViewController.swift */; };
 		F2F163EA29229B9F00F1C7F9 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F163E929229B9E00F1C7F9 /* AboutUsViewController.swift */; };
+		F2F38C06293415AE00FD8A19 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F38C05293415AE00FD8A19 /* ForgotPasswordViewController.swift */; };
 		FB0E880655219074C64D3F6F /* Pods_BAMX_Delta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C700AE12AAC9D2E0C8BA0085 /* Pods_BAMX_Delta.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		F26A28CC292FC8A3005547D0 /* DonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
 		F2E2048929246ECE0043ED6E /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		F2F163E929229B9E00F1C7F9 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		F2F38C05293415AE00FD8A19 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				F216911A2919E20500D42474 /* FirebaseAuthManager.swift */,
 				F26A28CA292FC88E005547D0 /* VolunteerViewController.swift */,
 				F26A28CC292FC8A3005547D0 /* DonationsViewController.swift */,
+				F2F38C05293415AE00FD8A19 /* ForgotPasswordViewController.swift */,
 				F23104BD292960D700BCD719 /* Usuario.swift */,
 				F266665628F76A74005C192C /* Main.storyboard */,
 				F266665928F76A78005C192C /* Assets.xcassets */,
@@ -400,6 +403,7 @@
 				F23104BE292960D700BCD719 /* Usuario.swift in Sources */,
 				F2F163EA29229B9F00F1C7F9 /* AboutUsViewController.swift in Sources */,
 				F266665128F76A74005C192C /* AppDelegate.swift in Sources */,
+				F2F38C06293415AE00FD8A19 /* ForgotPasswordViewController.swift in Sources */,
 				F21A5F18292E594800ED5064 /* CampaignsViewController.swift in Sources */,
 				F266665328F76A74005C192C /* SceneDelegate.swift in Sources */,
 			);

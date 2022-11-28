@@ -12,7 +12,7 @@
 		03FA2C55B46B6518B2A651DC7D0082E2 /* BTHTTPErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = CAD00EFCE6577CD8136613FCF8E9AC32 /* BTHTTPErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		048EB7E5AD599F3F394AE66A85856C92 /* Braintree.h in Headers */ = {isa = PBXBuildFile; fileRef = F31FCFC48B7F08A222C5188B32D17F7A /* Braintree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		056D54F9668ACB7ADD1AF2962F9D60BF /* BTPreferredPaymentMethodsResult_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = EB098D6F2E0EB7E676F7E592EFC7F01B /* BTPreferredPaymentMethodsResult_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		08E06C696103054C4B32302B72F87F9B /* youtube-ios-player-helper-Assets in Resources */ = {isa = PBXBuildFile; fileRef = D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */; };
+		08E06C696103054C4B32302B72F87F9B /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D674200BB0575198145B5455CF13275F /* Assets.bundle */; };
 		0F69FC15E03A36CBE07C1028873CB201 /* BTConfiguration+GraphQL.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EDACFCA2703F77C2077D62CD37036AC /* BTConfiguration+GraphQL.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0F811A237E7E3E6B282A9499CED02392 /* BTClientToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D7366CEDB75DF9E43879E04CCDE3D9 /* BTClientToken.m */; settings = {COMPILER_FLAGS = "-Wall -Werror -Wextra"; }; };
 		14D21F3CBB1F6ECAFAC49CDEAC9A74CC /* BTAuthenticationInsight.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1E6207609D2F6EA4F4E8DF2CC86F26 /* BTAuthenticationInsight.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -227,7 +227,7 @@
 		81C6A008194F14448A809B12775594B1 /* BTAnalyticsMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTAnalyticsMetadata.h; path = Sources/BraintreeCore/BTAnalyticsMetadata.h; sourceTree = "<group>"; };
 		81F52674B8B40839F6E3DEE719938CE6 /* BTErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTErrors.m; path = Sources/BraintreeCore/BTErrors.m; sourceTree = "<group>"; };
 		83D9BD50DDFD19B990583871C1129CD5 /* BTBinData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTBinData.h; path = Sources/BraintreeCore/Public/BraintreeCore/BTBinData.h; sourceTree = "<group>"; };
-		8498A1B2C60117E181CA67921DDAE0B6 /* youtube-ios-player-helper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "youtube-ios-player-helper"; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E1EA783A052556E0D845466EA8E3DB /* BTConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTConfiguration.m; path = Sources/BraintreeCore/BTConfiguration.m; sourceTree = "<group>"; };
 		8B26187E7B016490211135A3185073F1 /* BTAPIHTTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTAPIHTTP.h; path = Sources/BraintreeCore/BTAPIHTTP.h; sourceTree = "<group>"; };
 		9897AB65DC29654AF76654E74F2E7BF8 /* BTGraphQLHTTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTGraphQLHTTP.h; path = Sources/BraintreeCore/BTGraphQLHTTP.h; sourceTree = "<group>"; };
@@ -264,7 +264,7 @@
 		D2AFACCA2D323DCF664FA93ECC4B403C /* BTLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTLogger.m; path = Sources/BraintreeCore/BTLogger.m; sourceTree = "<group>"; };
 		D59F392065C2C38ADA3AA68B51517E85 /* PPDataCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PPDataCollector.swift; path = Sources/PayPalDataCollector/Public/PayPalDataCollector/PPDataCollector.swift; sourceTree = "<group>"; };
 		D612A8A80BE2F014C04F2B7B5EE6E165 /* BTEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTEnums.h; path = Sources/BraintreeCore/Public/BraintreeCore/BTEnums.h; sourceTree = "<group>"; };
-		D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "youtube-ios-player-helper-Assets"; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D674200BB0575198145B5455CF13275F /* Assets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9ADF1CEF8487B85315C10D40A14F0D0 /* Braintree-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Braintree-xcframeworks.sh"; sourceTree = "<group>"; };
 		DCC59F6B7226FC9D0C772582FCD958DB /* Braintree */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Braintree; path = Braintree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDCA6016BFB44C34674C05C40FACE00 /* Braintree-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Braintree-dummy.m"; sourceTree = "<group>"; };
@@ -332,8 +332,8 @@
 			children = (
 				DCC59F6B7226FC9D0C772582FCD958DB /* Braintree */,
 				491C07FB81F6790E3BE929C15A8107EF /* Pods-BAMX_Delta */,
-				8498A1B2C60117E181CA67921DDAE0B6 /* youtube-ios-player-helper */,
-				D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */,
+				8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */,
+				D674200BB0575198145B5455CF13275F /* Assets.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -710,7 +710,7 @@
 			);
 			name = "youtube-ios-player-helper-Assets";
 			productName = Assets;
-			productReference = D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */;
+			productReference = D674200BB0575198145B5455CF13275F /* Assets.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		800031B73572CE90FB673EABF89772C3 /* Pods-BAMX_Delta */ = {
@@ -768,7 +768,7 @@
 			);
 			name = "youtube-ios-player-helper";
 			productName = youtube_ios_player_helper;
-			productReference = 8498A1B2C60117E181CA67921DDAE0B6 /* youtube-ios-player-helper */;
+			productReference = 8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -778,7 +778,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1410;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -814,7 +814,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08E06C696103054C4B32302B72F87F9B /* youtube-ios-player-helper-Assets in Resources */,
+				08E06C696103054C4B32302B72F87F9B /* Assets.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -995,7 +995,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
 				IBSC_MODULE = youtube_ios_player_helper;
 				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = Assets;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1039,6 +1039,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1081,7 +1082,6 @@
 				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1153,7 +1153,6 @@
 				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1282,6 +1281,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1319,7 +1319,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/youtube-ios-player-helper";
 				IBSC_MODULE = youtube_ios_player_helper;
 				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/ResourceBundle-Assets-youtube-ios-player-helper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = Assets;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

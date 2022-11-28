@@ -24,6 +24,11 @@ class LoginViewController: UIViewController {
         // perform segue
     }
     
+    @IBAction func forgotPasswordButton_Tapped(_ sender: Any) {
+        performSegue(withIdentifier: "forgotPassword", sender: nil)
+    }
+    
+    
     func verifyEmail(email: String) -> Bool{
             let emailRegex = "^[\\p{L}0-9!#$%&'*+\\/=?^_`{|}~-][\\p{L}0-9.!#$%&'*+\\/=?^_`{|}~-]{0,63}@[\\p{L}0-9-]+(?:\\.[\\p{L}0-9-]{2,7})*$"
             
