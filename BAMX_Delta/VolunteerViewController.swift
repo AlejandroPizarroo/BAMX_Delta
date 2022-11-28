@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 import Firebase
 
-class VolunteerViewController: UIViewController {
+class VolunteerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
     
     
     @IBOutlet weak var textEmail: UITextField!
@@ -18,9 +20,20 @@ class VolunteerViewController: UIViewController {
     
     let ref = Database.database().reference(withPath: "Voluntarios")
     
+    
+    @IBOutlet weak var picker: UIPickerView!
+    var pickerData: [String] = [String]()
+
+
     override func viewDidLoad() {
         registerButton.layer.cornerRadius = 10
         super.viewDidLoad()
+        // Connect data:
+        self.picker.delegate = self
+        self.picker.dataSource = self
+        
+        // Input the data into the array
+        pickerData = ["Cualquier campaña", "Alimenta", "Al rescate"]
     }
     
     // MARK: Area de funciones
@@ -56,6 +69,19 @@ class VolunteerViewController: UIViewController {
         }
     }
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    
     // MARK: Registrar voluntario
     
     @IBAction func registerVolunteer(_ sender: Any) {
@@ -63,7 +89,8 @@ class VolunteerViewController: UIViewController {
         let key = UUID().uuidString
         let object : [String:Any] = [
             "contacto" : self.textEmail.text!,
-            "mensaje" : self.textMessage.text!
+            "mensaje" : self.textMessage.text!,
+            "campaña" : pickerData[self.picker.selectedRow(inComponent:0)]
         ]
         
         if textEmail.text?.isEmpty == true || textMessage.text?.isEmpty == true{
