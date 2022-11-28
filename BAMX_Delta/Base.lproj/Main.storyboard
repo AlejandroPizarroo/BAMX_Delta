@@ -849,6 +849,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="DONA AHORA">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="Gov-YK-GDb" kind="presentation" identifier="uniendoManosDonate" modalPresentationStyle="fullScreen" id="HBi-jL-wWw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySb-Or-ko0">
                                                 <rect key="frame" x="106" y="668" width="201" height="30"/>
@@ -863,6 +866,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="volunteerAlimenta:" destination="5mT-XM-g3J" eventType="touchUpInside" id="0bp-9b-jUt"/>
+                                                    <segue destination="TkR-sG-iDR" kind="presentation" identifier="alimentaVolunteer" modalPresentationStyle="fullScreen" id="y0b-ZG-CDX"/>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uniendomanos" translatesAutoresizingMaskIntoConstraints="NO" id="B78-Lg-tTe">
@@ -903,6 +907,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="volunteerAlRescate:" destination="5mT-XM-g3J" eventType="touchUpInside" id="xmi-KF-0YS"/>
+                                                    <segue destination="TkR-sG-iDR" kind="presentation" identifier="alRescateVolunteer" modalPresentationStyle="fullScreen" id="tDF-Kz-xhZ"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uniendo Manos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2m-wT-TVi">
@@ -949,6 +954,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="donateComerEnFamilia:" destination="5mT-XM-g3J" eventType="touchUpInside" id="5dD-02-qjy"/>
+                                                    <segue destination="Gov-YK-GDb" kind="presentation" identifier="comerFamiliaDonate" modalPresentationStyle="fullScreen" id="fgp-Af-hKy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1306,7 +1312,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-Iz-Scw">
-                                <rect key="frame" x="113" y="537" width="189" height="34.5"/>
+                                <rect key="frame" x="112.5" y="537" width="189" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Make Online Payment"/>
                                 <connections>
@@ -1337,11 +1343,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hr9-Qf-ldC"/>
-        <segue reference="mGS-3b-vch"/>
+        <segue reference="g4G-5P-1Sq"/>
+        <segue reference="tDF-Kz-xhZ"/>
         <segue reference="TSM-bO-iI4"/>
-        <segue reference="j7n-S9-7Re"/>
-        <segue reference="dVx-aV-6Uf"/>
+        <segue reference="YRq-xv-7T3"/>
+        <segue reference="Lzb-wM-eo1"/>
         <segue reference="Cji-LI-z94"/>
     </inferredMetricsTieBreakers>
     <resources>
