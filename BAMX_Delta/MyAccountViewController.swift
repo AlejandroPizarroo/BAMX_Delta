@@ -28,14 +28,8 @@ class MyAccountViewController: UIViewController{
         super.viewDidLoad()
         logOut.layer.cornerRadius = 10
         
-        let ud = UserDefaults.standard
-        currentUserLabel.text = String(ud.string(forKey: "nombre") ?? "nil")
-        udObservation = ud.observe(\.nombre, options: .new) {ud, change in
-            if let newValue = change.newValue{
-                self.currentUserLabel.text = String(newValue)
-            }
-        }
-        
+        self.currentUserLabel.text = "Mauricio! "
+    
     }
     
     

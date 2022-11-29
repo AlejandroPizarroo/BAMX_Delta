@@ -660,8 +660,8 @@
                                     <segue destination="qo6-ai-ICh" kind="presentation" identifier="logOut" modalPresentationStyle="fullScreen" id="Cji-LI-z94"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIGURACIÓN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXn-P0-R22">
-                                <rect key="frame" x="39" y="375" width="149" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACERCA DE " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXn-P0-R22">
+                                <rect key="frame" x="39" y="375" width="110" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1199,10 +1199,10 @@
                                     <action selector="registerVolunteer:" destination="TkR-sG-iDR" eventType="touchUpInside" id="wIt-wj-SRC"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lem-yB-S4d">
-                                <rect key="frame" x="54" y="586" width="306" height="103"/>
+                            <pickerView autoresizesSubviews="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lem-yB-S4d">
+                                <rect key="frame" x="82" y="586" width="251" height="94"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="103" id="6eN-Qg-xx8"/>
+                                    <constraint firstAttribute="height" constant="94" id="6eN-Qg-xx8"/>
                                 </constraints>
                             </pickerView>
                         </subviews>
@@ -1211,7 +1211,7 @@
                         <constraints>
                             <constraint firstItem="CCd-0W-QBh" firstAttribute="top" secondItem="Ytf-qH-PIU" secondAttribute="bottom" constant="50.5" id="401-1z-FW7"/>
                             <constraint firstItem="mV0-5S-ACH" firstAttribute="top" secondItem="KCd-DS-Wi1" secondAttribute="bottom" constant="42" id="7Hw-g3-or0"/>
-                            <constraint firstItem="lem-yB-S4d" firstAttribute="leading" secondItem="28W-SA-mge" secondAttribute="leading" constant="54" id="9oc-ZU-Z66"/>
+                            <constraint firstItem="lem-yB-S4d" firstAttribute="leading" secondItem="28W-SA-mge" secondAttribute="leading" constant="82" id="9oc-ZU-Z66"/>
                             <constraint firstItem="mV0-5S-ACH" firstAttribute="leading" secondItem="Ytf-qH-PIU" secondAttribute="leading" id="COc-nu-UGs"/>
                             <constraint firstItem="Ytf-qH-PIU" firstAttribute="leading" secondItem="IWH-oJ-Cwk" secondAttribute="leading" id="EFr-Qa-iq4"/>
                             <constraint firstItem="Zt8-HE-skb" firstAttribute="top" secondItem="rHc-V9-Zmb" secondAttribute="bottom" constant="42" id="Fje-oC-0at"/>
@@ -1229,7 +1229,7 @@
                             <constraint firstItem="rHc-V9-Zmb" firstAttribute="leading" secondItem="IWH-oJ-Cwk" secondAttribute="trailing" constant="22" id="TmT-Fa-reQ"/>
                             <constraint firstItem="rHc-V9-Zmb" firstAttribute="top" secondItem="CCd-0W-QBh" secondAttribute="bottom" constant="25" id="Wio-le-n85"/>
                             <constraint firstItem="qK1-2W-DnC" firstAttribute="centerX" secondItem="ars-ka-2Yh" secondAttribute="centerX" id="Xe8-zf-wTA"/>
-                            <constraint firstItem="qK1-2W-DnC" firstAttribute="top" secondItem="lem-yB-S4d" secondAttribute="bottom" constant="42" id="Y2d-Bq-Y35"/>
+                            <constraint firstItem="qK1-2W-DnC" firstAttribute="top" secondItem="lem-yB-S4d" secondAttribute="bottom" constant="51" id="Y2d-Bq-Y35"/>
                             <constraint firstItem="Xvm-eR-pSS" firstAttribute="centerY" secondItem="Zt8-HE-skb" secondAttribute="centerY" id="ZSl-cG-slR"/>
                             <constraint firstItem="lem-yB-S4d" firstAttribute="centerX" secondItem="qK1-2W-DnC" secondAttribute="centerX" id="anq-9J-5ll"/>
                             <constraint firstItem="Ytf-qH-PIU" firstAttribute="top" secondItem="mV0-5S-ACH" secondAttribute="bottom" constant="8.5" id="dwp-VD-egy"/>
@@ -1271,9 +1271,6 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG4-Au-JPF">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="ySh-Oy-Dzd"/>
-                                        </constraints>
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
@@ -1286,9 +1283,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYe-Or-MgH">
                                         <rect key="frame" x="103" y="0.0" width="50" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="djP-2r-U1F"/>
-                                        </constraints>
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
@@ -1300,15 +1294,15 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-LO-f9L">
                                         <rect key="frame" x="206" y="0.0" width="50" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="Cw0-tC-Df5"/>
-                                        </constraints>
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="dollarsign.circle" catalog="system"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTz-Vc-hae">
                                         <rect key="frame" x="309" y="0.0" width="49" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="49" id="5CX-Mw-jNe"/>
+                                        </constraints>
                                         <color key="tintColor" red="0.28997868300000001" green="0.2909060121" blue="0.30099850890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system"/>
@@ -1328,16 +1322,82 @@
                                     <segue destination="TkR-sG-iDR" kind="presentation" identifier="goVolunteer" modalPresentationStyle="fullScreen" id="Hr9-Qf-ldC"/>
                                 </connections>
                             </segmentedControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MetodoPagoOffline" translatesAutoresizingMaskIntoConstraints="NO" id="NDr-N3-pEO">
-                                <rect key="frame" x="47" y="252" width="321" height="222"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Las donaciones serán designadas para la compra de estos productos*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBk-As-r0J">
+                                <rect key="frame" x="18" y="2215.5" width="376" height="18"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="222" id="Y5M-Z0-6ux"/>
+                                    <constraint firstAttribute="height" constant="18" id="vtE-Mj-0SM"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Las donaciones estarán destinadas a la compra de dichos productos *" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GB5-ya-aIJ">
+                                <rect key="frame" x="12" y="769" width="391" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="vRs-db-Tmf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canasta" translatesAutoresizingMaskIntoConstraints="NO" id="29P-br-htR">
+                                <rect key="frame" x="18" y="109" width="165" height="579"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-Iz-Scw">
-                                <rect key="frame" x="112.5" y="537" width="189" height="34.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruh-PG-wDW">
+                                <rect key="frame" x="218" y="432" width="153.5" height="34.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.5" id="j2h-6B-E4H"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Make Online Payment"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Donar $800MXN"/>
+                                <connections>
+                                    <action selector="paypalPaymentProcess2:" destination="Gov-YK-GDb" eventType="touchUpInside" id="mms-JM-fgL"/>
+                                    <action selector="paypalPaymentProcess:" destination="Gov-YK-GDb" eventType="touchUpInside" id="5XN-nT-n3k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyF-LD-QFH">
+                                <rect key="frame" x="216" y="654" width="160.5" height="34.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.5" id="Koh-4o-VvQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Donar $1200MXN"/>
+                                <connections>
+                                    <action selector="paypalPaymentProcess3:" destination="Gov-YK-GDb" eventType="touchUpInside" id="x9u-Dg-8wZ"/>
+                                    <action selector="paypalPaymentProcess:" destination="Gov-YK-GDb" eventType="touchUpInside" id="Y7H-Yj-OJp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRUTAS Y VERDURAS  Incluye: esparrago, tomate, pimiento, cebolla, brócoli y lechuga" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="190" translatesAutoresizingMaskIntoConstraints="NO" id="m4Y-iw-59v">
+                                <rect key="frame" x="202" y="141" width="192" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="F8f-0r-e4b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTOS PROTEÍNA  Incluye: pescado, pollo, huevos, res y almendras" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="190" translatesAutoresizingMaskIntoConstraints="NO" id="kWs-WZ-1ky">
+                                <rect key="frame" x="202" y="343" width="192" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="pG4-QJ-Ry6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CANASTA BÁSICA Incluye: aceite vegetal, arroz de grano, atún, papa, zanahoria, tortilla de maíz y frijol negro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="190" translatesAutoresizingMaskIntoConstraints="NO" id="dGs-4o-sB8">
+                                <rect key="frame" x="199" y="505" width="191.5" height="141"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-Iz-Scw">
+                                <rect key="frame" x="218" y="250" width="153.5" height="34.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.5" id="D0n-C4-jQf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Donar $400MXN"/>
                                 <connections>
                                     <action selector="paypalPaymentProcess:" destination="Gov-YK-GDb" eventType="touchUpInside" id="afL-Sr-g6f"/>
                                 </connections>
@@ -1346,17 +1406,38 @@
                         <viewLayoutGuide key="safeArea" id="Cn0-NA-BD0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="centerX" secondItem="pHf-8z-YIV" secondAttribute="centerX" id="2YD-gM-O4N"/>
-                            <constraint firstItem="NDr-N3-pEO" firstAttribute="top" secondItem="EuM-PV-WUg" secondAttribute="top" constant="252" id="BVt-fI-ZR5"/>
-                            <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="EuM-PV-WUg" secondAttribute="centerX" id="K5O-dq-m1X"/>
-                            <constraint firstItem="ffP-hb-rxt" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="110" id="PVg-Qu-jxE"/>
-                            <constraint firstItem="NDr-N3-pEO" firstAttribute="centerX" secondItem="XU6-Iz-Scw" secondAttribute="centerX" id="Qq8-Gz-Gk2"/>
-                            <constraint firstItem="NDr-N3-pEO" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="47" id="Tuy-n2-FQQ"/>
-                            <constraint firstItem="pHf-8z-YIV" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="28" id="WMQ-vw-BRM"/>
-                            <constraint firstItem="ffP-hb-rxt" firstAttribute="top" secondItem="Cn0-NA-BD0" secondAttribute="top" id="ahR-cv-8Bm"/>
-                            <constraint firstItem="pHf-8z-YIV" firstAttribute="bottom" secondItem="Cn0-NA-BD0" secondAttribute="bottom" id="l5e-6D-eu3"/>
-                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="centerY" secondItem="EuM-PV-WUg" secondAttribute="centerY" constant="106.25" id="tJL-eh-j7M"/>
-                            <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="XU6-Iz-Scw" secondAttribute="centerX" id="vpk-uF-hAG"/>
+                            <constraint firstItem="ruh-PG-wDW" firstAttribute="top" secondItem="kWs-WZ-1ky" secondAttribute="bottom" constant="8" symbolic="YES" id="4z5-nT-iGP"/>
+                            <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="GB5-ya-aIJ" secondAttribute="centerX" id="5fx-cP-skB"/>
+                            <constraint firstItem="29P-br-htR" firstAttribute="top" secondItem="ffP-hb-rxt" secondAttribute="bottom" constant="30" id="6Lz-Fd-j5R"/>
+                            <constraint firstItem="kWs-WZ-1ky" firstAttribute="top" secondItem="XU6-Iz-Scw" secondAttribute="bottom" constant="58.5" id="7Al-p5-GeS"/>
+                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="leading" secondItem="29P-br-htR" secondAttribute="trailing" constant="35" id="Cg7-yL-CX2"/>
+                            <constraint firstItem="Cn0-NA-BD0" firstAttribute="trailing" secondItem="dGs-4o-sB8" secondAttribute="trailing" constant="23.5" id="G9A-WI-7gS"/>
+                            <constraint firstItem="uyF-LD-QFH" firstAttribute="leading" secondItem="29P-br-htR" secondAttribute="trailing" constant="33" id="KJz-Z0-FDo"/>
+                            <constraint firstItem="dGs-4o-sB8" firstAttribute="leading" secondItem="29P-br-htR" secondAttribute="trailing" constant="16" id="Kqb-12-Slq"/>
+                            <constraint firstItem="m4Y-iw-59v" firstAttribute="leading" secondItem="29P-br-htR" secondAttribute="trailing" constant="19" id="LQn-bP-2Xt"/>
+                            <constraint firstItem="ffP-hb-rxt" firstAttribute="centerX" secondItem="EuM-PV-WUg" secondAttribute="centerX" id="Mjc-SS-4vs"/>
+                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="top" secondItem="m4Y-iw-59v" secondAttribute="bottom" constant="8" symbolic="YES" id="NVL-5m-RBS"/>
+                            <constraint firstItem="29P-br-htR" firstAttribute="leading" secondItem="ZBk-As-r0J" secondAttribute="leading" id="Nd7-IY-caY"/>
+                            <constraint firstItem="pHf-8z-YIV" firstAttribute="bottom" secondItem="Cn0-NA-BD0" secondAttribute="bottom" id="P4c-Di-Vhh"/>
+                            <constraint firstItem="m4Y-iw-59v" firstAttribute="trailing" secondItem="kWs-WZ-1ky" secondAttribute="trailing" id="QT4-Bz-738"/>
+                            <constraint firstItem="ffP-hb-rxt" firstAttribute="top" secondItem="Cn0-NA-BD0" secondAttribute="top" id="Quh-oI-Ux1"/>
+                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="trailing" secondItem="ruh-PG-wDW" secondAttribute="trailing" id="Rja-cw-6BO"/>
+                            <constraint firstItem="uyF-LD-QFH" firstAttribute="top" secondItem="dGs-4o-sB8" secondAttribute="bottom" constant="8" symbolic="YES" id="SIL-X9-Odh"/>
+                            <constraint firstItem="m4Y-iw-59v" firstAttribute="leading" secondItem="kWs-WZ-1ky" secondAttribute="leading" id="Vn7-Cb-hJG"/>
+                            <constraint firstItem="kWs-WZ-1ky" firstAttribute="trailing" secondItem="ZBk-As-r0J" secondAttribute="trailing" id="WqM-hU-oZL"/>
+                            <constraint firstItem="GB5-ya-aIJ" firstAttribute="centerX" secondItem="pHf-8z-YIV" secondAttribute="centerX" id="XM4-Ws-NFM"/>
+                            <constraint firstItem="XU6-Iz-Scw" firstAttribute="leading" secondItem="ruh-PG-wDW" secondAttribute="leading" id="be1-WL-TNc"/>
+                            <constraint firstItem="m4Y-iw-59v" firstAttribute="top" secondItem="ffP-hb-rxt" secondAttribute="bottom" constant="62" id="cMq-EL-xMc"/>
+                            <constraint firstItem="29P-br-htR" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="18" id="eWk-hf-FHu"/>
+                            <constraint firstItem="pHf-8z-YIV" firstAttribute="top" secondItem="GB5-ya-aIJ" secondAttribute="bottom" constant="42" id="fTH-uP-BOB"/>
+                            <constraint firstItem="m4Y-iw-59v" firstAttribute="trailing" secondItem="EuM-PV-WUg" secondAttribute="trailingMargin" id="faJ-p1-Mcu"/>
+                            <constraint firstItem="ffP-hb-rxt" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="110" id="kow-GX-DRN"/>
+                            <constraint firstItem="ruh-PG-wDW" firstAttribute="centerX" secondItem="dGs-4o-sB8" secondAttribute="centerX" id="nOU-EA-1eQ"/>
+                            <constraint firstItem="GB5-ya-aIJ" firstAttribute="leading" secondItem="Cn0-NA-BD0" secondAttribute="leading" constant="12" id="qMi-PD-48a"/>
+                            <constraint firstItem="GB5-ya-aIJ" firstAttribute="top" secondItem="uyF-LD-QFH" secondAttribute="bottom" constant="80.5" id="tw6-S5-fLc"/>
+                            <constraint firstItem="ZBk-As-r0J" firstAttribute="top" secondItem="EuM-PV-WUg" secondAttribute="top" constant="2215.5" id="vVd-PL-wM1"/>
+                            <constraint firstItem="GB5-ya-aIJ" firstAttribute="top" secondItem="29P-br-htR" secondAttribute="bottom" constant="81" id="xDp-Cz-Yvx"/>
+                            <constraint firstItem="dGs-4o-sB8" firstAttribute="top" secondItem="ruh-PG-wDW" secondAttribute="bottom" constant="38.5" id="yLs-hi-eMJ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1366,17 +1447,17 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mGS-3b-vch"/>
-        <segue reference="tDF-Kz-xhZ"/>
-        <segue reference="phj-N7-nmW"/>
-        <segue reference="P3c-2E-j3d"/>
-        <segue reference="50i-kA-Rdn"/>
+        <segue reference="LW9-7l-8Nb"/>
+        <segue reference="Hr9-Qf-ldC"/>
+        <segue reference="cBu-Sb-FOe"/>
+        <segue reference="j7n-S9-7Re"/>
+        <segue reference="Qfi-8H-NNx"/>
         <segue reference="Cji-LI-z94"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="MetodoPagoOffline" width="355" height="245"/>
         <image name="alimenta" width="200" height="132"/>
         <image name="alrescate" width="200" height="132"/>
+        <image name="canasta" width="438" height="1338"/>
         <image name="comerfamilia" width="200" height="132"/>
         <image name="divider" width="512" height="512"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="123"/>
