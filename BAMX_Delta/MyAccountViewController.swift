@@ -10,9 +10,6 @@ import FirebaseAuth
 import Foundation
 import UIKit
 
-extension UserDefaults{
-    @NSManaged var nombre: String
-}
 
 class MyAccountViewController: UIViewController{
 
@@ -23,20 +20,17 @@ class MyAccountViewController: UIViewController{
     
     var udObservation: NSKeyValueObservation?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         logOut.layer.cornerRadius = 10
-        
-        self.currentUserLabel.text = "Mauricio! "
-    
+        //self.currentUserLabel.text = "Mauricio! "
     }
     
     
     
     override func viewDidAppear(_ animated: Bool) {
         if let value = UserDefaults.standard.string(forKey: "loggedUser"){
-            print(value + " is still logged in")
+            self.currentUserLabel.text = value
         }
         else{
             var waitAlert: UIAlertController

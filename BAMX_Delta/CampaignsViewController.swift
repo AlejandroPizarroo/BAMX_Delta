@@ -22,11 +22,21 @@ class CampaignsViewController: UIViewController {
         volunteerAlimenta.layer.cornerRadius = 10
         donateComerEnFamilia.layer.cornerRadius = 10
         volunteerAlRescate.layer.cornerRadius = 10
-        
-
+    
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "alRescateVolunteer" {
+            let updateVC = segue.destination as! VolunteerViewController
+            updateVC.defaultChoice = 2
+        }
+        if segue.identifier == "alimentaVolunteer" {
+            let updateVC = segue.destination as! VolunteerViewController
+            updateVC.defaultChoice = 1
+                
+        }
+    }
 
 }

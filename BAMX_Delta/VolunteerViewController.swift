@@ -11,9 +11,6 @@ import Firebase
 
 class VolunteerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    
-    
-    
     @IBOutlet weak var textEmail: UITextField!
     @IBOutlet weak var textMessage: UITextField!
     @IBOutlet weak var registerButton: UIButton!
@@ -23,6 +20,8 @@ class VolunteerViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     @IBOutlet weak var picker: UIPickerView!
     var pickerData: [String] = [String]()
+    
+    var defaultChoice = 0
 
 
     override func viewDidLoad() {
@@ -34,6 +33,7 @@ class VolunteerViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         
         // Input the data into the array
         pickerData = ["Cualquier campaña", "Alimenta", "Al rescate"]
+        picker.selectRow(defaultChoice, inComponent: 0, animated: true)
     }
     
     // MARK: Area de funciones
