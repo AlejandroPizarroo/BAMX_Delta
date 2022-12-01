@@ -68,6 +68,8 @@ class RegisterViewController: UIViewController {
         
     }
     
+    
+    
     @IBAction func saveUser(_ sender: Any) {
         
         // MARK: Registrar usuario
@@ -84,6 +86,7 @@ class RegisterViewController: UIViewController {
         }else{
             if verifyEmail(email: textEmail.text!){
                 if verifySecurePassword(password: textPassword.text!){
+                    
                     let sgManager = FirebaseAuthManager()
                     
                     sgManager.createUser(email: textEmail.text!, password: textPassword.text!){
@@ -94,28 +97,34 @@ class RegisterViewController: UIViewController {
                         guard let `self` = self else {return}
                         
                         if success{
-                            message = "El usuario se creó exitosamente!"
-                        }else{
-                            message = "Hubo un problema al crear el usuario"
+                            var message = ""
+                            self.ref.child(key).setValue(object){
+                                (error: Error?, ref:DatabaseReference) in
+                                
+                                if let error = error {
+                                    message = "Ha ocurrido un error"
+                                    print(error)
+                                }
+                                else{
+                                    message = "El usuario se creó exitosamente!"
+                                    self.displayAlertMessageBlank(message: message)
+                                }
+                                
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+                               self.performSegue(withIdentifier: "goLogin", sender: self )
+                            })
+                            
                         }
                         
-                        self.displayAlertMessage(message: message)
+                        else{
+                            message = "Hubo un problema al crear el usuario"
+                            self.displayAlertMessage(message: message)
+                        }
+                        
                     }
                     
-                    ref.child(key).setValue(object){
-                        (error: Error?, ref:DatabaseReference) in
-                        
-                        var message = ""
-                        
-                        if let error = error {
-                            message = "Ha ocurrido un error"
-                            print(error)
-                        }
-                        else{
-                            message = "El usuario se creó exitosamente!"
-                        }
-                        self.displayAlertMessageBlank(message: message)
-                    }
+                    
                     
                     
                     
@@ -124,7 +133,7 @@ class RegisterViewController: UIViewController {
                 }
                 
             }else{
-                self.displayAlertMessage(message: "El email es incorrecto!")
+                self.displayAlertMessage(message: "El formato del email es incorrecto!")
             }
             
             
@@ -132,9 +141,7 @@ class RegisterViewController: UIViewController {
 
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
-           self.performSegue(withIdentifier: "goLogin", sender: self )
-        })
+        
     }
 
     

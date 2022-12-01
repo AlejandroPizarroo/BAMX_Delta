@@ -93,7 +93,7 @@ class VolunteerViewController: UIViewController, UIPickerViewDelegate, UIPickerV
             "campaña" : pickerData[self.picker.selectedRow(inComponent:0)]
         ]
         
-        if textEmail.text?.isEmpty == true || textMessage.text?.isEmpty == true{
+        if textEmail.text?.isEmpty == true {
             displayAlertMessage(message: "Tienes campos de texto vacíos")
         }else{
             if verifyEmail(email: textEmail.text!){
